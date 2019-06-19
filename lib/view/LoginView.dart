@@ -17,12 +17,25 @@ class LoginView extends StatelessWidget {
             Container(
               height: height * 0.8,
               color: colorLightBlueGreyTwo,
+              child: Align(
+                  alignment: Alignment.bottomCenter,
+                  child: Image.asset('assets/drawable-xhdpi/Flores-fundo.png')),
             ),
-            DecoratedBox(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage(''),
-                ),
+            Padding(
+              padding: const EdgeInsets.all(40.0),
+              child: Text("Agende e facilite seu atendimento com o Apoio UnB!",
+                  style: TextStyle(
+                      color: colorMutedBlue,
+                      fontWeight: FontWeight.w500,
+                      fontFamily: "Roboto",
+                      fontStyle: FontStyle.normal,
+                      fontSize: 20.0),),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 140),
+              child: Image.asset(
+                'assets/drawable-xhdpi/logo-apoio-unb.png',
+                width: width - 144,
               ),
             ),
             Positioned(
