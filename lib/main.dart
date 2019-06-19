@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'view/LoginView.dart';
+import 'view/FirstView.dart';
 
 void main() => runApp(MyApp());
 
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
+        '/asd': (context) => FirstView(),
         '/': (context) => LoginView(),
       }
     );
