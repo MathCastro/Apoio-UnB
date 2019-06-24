@@ -75,8 +75,7 @@ class _LoginViewState extends State<LoginView> {
                                       borderSide: BorderSide(
                                         color:
                                             colorMutedBlue, //Color of the border
-                                        style: BorderStyle
-                                            .solid, //Style of the border
+                                        style: BorderStyle.solid, //Style of the border
                                         width: 0.8, //width of the border
                                       ),
                                     ),

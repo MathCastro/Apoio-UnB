@@ -81,7 +81,9 @@ class FirstView extends StatelessWidget {
                               width: 0.8, //width of the border
                             ),
                             color: Colors.white,
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.pushNamed(context, '/registrar');
+                            },
                             child: Center(
                               child: Text(
                                 "Registrar",
