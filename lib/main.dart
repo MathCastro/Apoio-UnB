@@ -24,8 +24,8 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/asd': (context) => FirstView(),
-        '/': (context) => LoginView(),
+        '/': (context) => FirstView(),
+        '/login': (context) => LoginView(),
       }
     );
   }
