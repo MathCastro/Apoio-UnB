@@ -47,6 +47,11 @@ flutter:
   assets:
     - assets/drawable-xhdpi/Flores-fundo.png
     - assets/drawable-xhdpi/logo-apoio-unb.png
+    - assets/drawable-xhdpi/illustration-perfil.png
+    - assets/drawable-xhdpi/noun_home.png
+    - assets/drawable-xhdpi/Icon - Event - Filled.png
+    - assets/drawable-xhdpi/Repetição de grade 17.png
+    - assets/drawable-xhdpi/Icon - Search - Filled.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
