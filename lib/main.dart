@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'view/LoginView.dart';
 import 'view/FirstView.dart';
 import 'view/RegistrarView.dart';
+import 'view/ProfileView.dart';
 
 void main() => runApp(MyApp());
 
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => FirstView(),
         '/login': (context) => LoginView(),
         '/registrar': (context) => RegistrarView(),
+        '/perfil' : (context) => ProfileView(),
       }
     );
   }
