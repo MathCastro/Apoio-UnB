@@ -113,7 +113,7 @@ class MyCustomFormState extends State<MyCustomForm> {
               left: 20,
               right: 20,
             ),
-            child: Text("Nome Completo:",
+            child: Text("E-mail:",
                 style: TextStyle(
                     color: colorMutedBlue,
                     fontWeight: FontWeight.w700,
@@ -149,7 +149,7 @@ class MyCustomFormState extends State<MyCustomForm> {
               left: 20,
               right: 20,
             ),
-            child: Text("Nome Completo:",
+            child: Text("Matrícula:",
                 style: TextStyle(
                     color: colorMutedBlue,
                     fontWeight: FontWeight.w700,
@@ -185,7 +185,7 @@ class MyCustomFormState extends State<MyCustomForm> {
               left: 20,
               right: 20,
             ),
-            child: Text("Nome Completo:",
+            child: Text("Telefone:",
                 style: TextStyle(
                     color: colorMutedBlue,
                     fontWeight: FontWeight.w700,
@@ -221,7 +221,7 @@ class MyCustomFormState extends State<MyCustomForm> {
               left: 20,
               right: 20,
             ),
-            child: Text("Nome Completo:",
+            child: Text("Senha:",
                 style: TextStyle(
                     color: colorMutedBlue,
                     fontWeight: FontWeight.w700,
@@ -253,7 +253,7 @@ class MyCustomFormState extends State<MyCustomForm> {
           ),
           Padding(
             padding: const EdgeInsets.only(top: 8, left: 20, right: 20),
-            child: Text("Nome Completo:",
+            child: Text("Confirmar senha:",
                 style: TextStyle(
                     color: colorMutedBlue,
                     fontWeight: FontWeight.w700,
