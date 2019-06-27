@@ -3,6 +3,7 @@ import 'view/LoginView.dart';
 import 'view/FirstView.dart';
 import 'view/RegistrarView.dart';
 import 'view/ProfileView.dart';
+import 'view/AtendimentoInicialView.dart';
 
 void main() => runApp(MyApp());
 
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => FirstView(),
+        '/': (context) => AtendimentoInicialView(),
         '/login': (context) => LoginView(),
         '/registrar': (context) => RegistrarView(),
         '/perfil' : (context) => ProfileView(),
