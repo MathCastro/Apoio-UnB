@@ -3,6 +3,7 @@ import 'view/LoginView.dart';
 import 'view/FirstView.dart';
 import 'view/RegistrarView.dart';
 import 'view/ProfileView.dart';
+import 'view/AtendimentoInicialView.dart';
 
 void main() => runApp(MyApp());
 
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
         '/login': (context) => LoginView(),
         '/registrar': (context) => RegistrarView(),
         '/perfil' : (context) => ProfileView(),
+        '/formulario_inicial' : (context) => AtendimentoInicialView(),
       }
     );
   }
