@@ -337,16 +337,12 @@ class MyCustomFormState extends State<MyCustomForm> {
                           SnackBar(content: Text('Processing Data')));
 
                       AuthController().registerUser(_user);
-                      Navigator.pushNamed(context, '/formulario_inicial');
+                      Navigator.pushNamed(context, '/nova_consulta_unid_atend');
 
                       print('Printing the login data.');
                       print('User: ${_user.toString()}');
-<<<<<<< HEAD
                     }
-                    Navigator.pushNamed(context, '/nova_consulta_unid_atend');
-=======
-                    }                  
->>>>>>> c044fe4a041e24338b01c324281b2639dbfbc64b
+                  
                   },
                   child: Center(
                     child: Text(
