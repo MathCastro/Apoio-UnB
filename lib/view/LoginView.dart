@@ -162,7 +162,7 @@ class _LoginViewState extends State<LoginView> {
   void login() async {
     try{
       await AuthController().signInWithEmailAndPassword(email, password);
-      Navigator.pushNamed(context, '/formulario_inicial');
+      Navigator.pushNamed(context, '/home');
     } catch(e) {
       print(e);
     }

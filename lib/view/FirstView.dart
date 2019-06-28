@@ -18,8 +18,9 @@ class FirstView extends StatelessWidget {
               height: height * 0.8,
               color: colorLightBlueGreyTwo,
               child: Align(
-                  alignment: Alignment.bottomCenter,
-                  child: Image.asset('assets/drawable-xhdpi/Flores-fundo.png')),
+                alignment: Alignment.bottomCenter,
+                child: Image.asset('assets/drawable-xhdpi/Flores-fundo.png'),
+              ),
             ),
             Padding(
               padding: const EdgeInsets.all(40.0),
