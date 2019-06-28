@@ -337,7 +337,7 @@ class MyCustomFormState extends State<MyCustomForm> {
                           SnackBar(content: Text('Processing Data')));
 
                       AuthController().registerUser(_user);
-                      Navigator.pushNamed(context, '/nova_consulta_unid_atend');
+                      Navigator.pushNamed(context, '/home');
 
                       print('Printing the login data.');
                       print('User: ${_user.toString()}');
