@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "230768069649",
+    "firebase_url": "https://apoio-unb.firebaseio.com",
+    "project_id": "apoio-unb",
+    "storage_bucket": "apoio-unb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230768069649:android:a48e068f9cda851d",
+        "android_client_info": {
+          "package_name": "com.example.apoio_unb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "230768069649-s2hg4aqppn6si3vbvkiov74sq9jsfg46.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCu5k6gccv23Pjm0qn_pA4JhK96BQ66Qg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "230768069649-s2hg4aqppn6si3vbvkiov74sq9jsfg46.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

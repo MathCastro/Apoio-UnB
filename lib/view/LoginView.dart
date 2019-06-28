@@ -1,4 +1,6 @@
 import 'dart:io';
+import 'package:apoio_unb/controller/auth/AuthController.dart';
+
 import '../res/Colors.dart';
 
 import 'package:flutter/material.dart';
@@ -10,6 +12,8 @@ class LoginView extends StatefulWidget {
 
 class _LoginViewState extends State<LoginView> {
   final _formKey = GlobalKey<FormState>();
+  String email;
+  String password;
 
   @override
   Widget build(BuildContext context) {
@@ -75,11 +79,15 @@ class _LoginViewState extends State<LoginView> {
                                       borderSide: BorderSide(
                                         color:
                                             colorMutedBlue, //Color of the border
-                                        style: BorderStyle.solid, //Style of the border
+                                        style: BorderStyle
+                                            .solid, //Style of the border
                                         width: 0.8, //width of the border
                                       ),
                                     ),
                                   ),
+                                  onSaved: (String value) {
+                                    email = value;
+                                  },
                                 ),
                               ),
                             ),
@@ -116,6 +124,9 @@ class _LoginViewState extends State<LoginView> {
                                       ),
                                     ),
                                   ),
+                                  onSaved: (String value) {
+                                    password = value;
+                                  },
                                 ),
                               ),
                             ),
@@ -124,7 +135,8 @@ class _LoginViewState extends State<LoginView> {
                               child: RaisedButton(
                                 color: colorMutedBlue,
                                 onPressed: () {
-                                  Navigator.pushNamed(context, '/login');
+                                  _formKey.currentState.save();
+                                  login();
                                 },
                                 child: Center(
                                   child: Text(
@@ -146,5 +158,13 @@ class _LoginViewState extends State<LoginView> {
         ),
       ),
     );
+  }
+  void login() async {
+    try{
+      await AuthController().signInWithEmailAndPassword(email, password);
+      Navigator.pushNamed(context, '/formulario_inicial');
+    } catch(e) {
+      print(e);
+    }
   }
 }
