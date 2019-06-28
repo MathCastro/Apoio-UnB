@@ -4,7 +4,7 @@ import '../res/Colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 
-class NovaConsultaAreaAtuacaoView extends StatelessWidget {
+class NovaConsultaProfDispView extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
@@ -46,7 +46,7 @@ class NovaConsultaAreaAtuacaoView extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(top: 100),
               child: Image.asset(
-                'assets/drawable-xhdpi/illustration-area-de-atuacao.png',
+                'assets/drawable-xhdpi/illustration-profissionais-disponiveis.png',
                 width: width - 180,
               ),
             ),
@@ -83,7 +83,7 @@ class NovaConsultaAreaAtuacaoView extends StatelessWidget {
                         activeColor: colorAquamarine,
                         groupValue: 1, onChanged: (int value) {},
                       ),
-                        Text('Psicologia'),
+                        Text('Rodrigão da Massa'),
                       ],
                     ),
                     Row(
@@ -93,7 +93,7 @@ class NovaConsultaAreaAtuacaoView extends StatelessWidget {
                         activeColor: colorAquamarine,
                         groupValue: 1, onChanged: (int value) {},
                       ),
-                        Text('Dependência'),
+                        Text('Matheus Nerdão'),
                       ],
                     ),
                     Row(
@@ -103,7 +103,7 @@ class NovaConsultaAreaAtuacaoView extends StatelessWidget {
                         activeColor: colorAquamarine,
                         groupValue: 1, onChanged: (int value) {},
                       ),
-                        Text('Qualidade de vida'),
+                        Text('King Tchezarè'),
                       ],
                     ),
                     Row(
@@ -113,7 +113,7 @@ class NovaConsultaAreaAtuacaoView extends StatelessWidget {
                         activeColor: colorAquamarine,
                         groupValue: 1, onChanged: (int value) {},
                       ),
-                        Text('Necessidades especiais'),
+                        Text('Trollador do futuro'),
                       ],
                     ),
                     RaisedButton(
