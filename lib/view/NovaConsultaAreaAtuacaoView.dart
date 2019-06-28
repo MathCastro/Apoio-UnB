@@ -11,6 +11,13 @@ class NovaConsultaAreaAtuacaoView extends StatelessWidget {
     final double height = MediaQuery.of(context).size.height;
     final double width = MediaQuery.of(context).size.width;
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        title: Text(
+          "Nova Consulta",
+          style: TextStyle(color: Colors.black),
+        ),
+      ),
       body: Container(
         height: height,
         child: Stack(
@@ -20,29 +27,6 @@ class NovaConsultaAreaAtuacaoView extends StatelessWidget {
               height: height * 0.5,
               color: colorLightBlueGreyTwo,
             ),
-            Padding(
-                padding: const EdgeInsets.only(top: 22.0, bottom: 40.0),
-                child: Container(
-                  color: Colors.white,
-                  width: width,
-                  height: 48.0,
-                  child: Padding(
-                      padding: const EdgeInsets.only(left: 35.0),
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: <Widget>[
-                          Text(
-                            "Nova Consulta",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontWeight: FontWeight.w500,
-                                fontFamily: "Roboto",
-                                fontStyle: FontStyle.normal,
-                                fontSize: 20.0),
-                          ),
-                        ],
-                      )),
-                )),
             Padding(
               padding: const EdgeInsets.only(top: 100),
               child: Image.asset(
