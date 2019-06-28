@@ -42,86 +42,98 @@ class _HomeViewState extends State<HomeView> {
           SingleChildScrollView(
             child: Column(
               children: <Widget>[
-                Padding(padding: EdgeInsets.only(top: 10),),
+                Padding(
+                  padding: EdgeInsets.only(top: 10),
+                ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Card(
-                      child: Center(
-                        child: Container(
-                          height: 150,
-                          width: 110,
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: <Widget>[
-                              Container(
-                                height: 55,
-                                child: Image.asset(
-                                    'assets/drawable-xhdpi/notepad.png'),
-                              ),
-                              Center(
-                                child: Text(
-                                  "Novo",
-                                  style: const TextStyle(
-                                      color: const Color(0xff3b4d57),
-                                      fontWeight: FontWeight.w700,
-                                      fontFamily: "Roboto",
-                                      fontStyle: FontStyle.normal,
-                                      fontSize: 14.0),
+                    InkWell(
+                      onTap: () {
+                        print("tapped");
+                      },
+                      child: Card(
+                        child: Center(
+                          child: Container(
+                            height: 150,
+                            width: 110,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: <Widget>[
+                                Container(
+                                  height: 55,
+                                  child: Image.asset(
+                                      'assets/drawable-xhdpi/notepad.png'),
                                 ),
-                              ),
-                              Center(
-                                child: Text(
-                                  "Atendimento",
-                                  style: const TextStyle(
-                                      color: const Color(0xff3b4d57),
-                                      fontWeight: FontWeight.w700,
-                                      fontFamily: "Roboto",
-                                      fontStyle: FontStyle.normal,
-                                      fontSize: 14.0),
+                                Center(
+                                  child: Text(
+                                    "Novo",
+                                    style: const TextStyle(
+                                        color: const Color(0xff3b4d57),
+                                        fontWeight: FontWeight.w700,
+                                        fontFamily: "Roboto",
+                                        fontStyle: FontStyle.normal,
+                                        fontSize: 14.0),
+                                  ),
                                 ),
-                              ),
-                            ],
+                                Center(
+                                  child: Text(
+                                    "Atendimento",
+                                    style: const TextStyle(
+                                        color: const Color(0xff3b4d57),
+                                        fontWeight: FontWeight.w700,
+                                        fontFamily: "Roboto",
+                                        fontStyle: FontStyle.normal,
+                                        fontSize: 14.0),
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       ),
                     ),
-                    Card(
-                      child: Center(
-                        child: Container(
-                          height: 150,
-                          width: 110,
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: <Widget>[
-                              Container(
-                                height: 55,
-                                child: Image.asset(
-                                    'assets/drawable-xhdpi/010-calendar-2.png'),
-                              ),
-                              Center(
-                                child: Text(
-                                  "Nova",
-                                  style: const TextStyle(
-                                      color: const Color(0xff3b4d57),
-                                      fontWeight: FontWeight.w700,
-                                      fontFamily: "Roboto",
-                                      fontStyle: FontStyle.normal,
-                                      fontSize: 14.0),
+                    InkWell(
+                      onTap: () {
+                        Navigator.pushNamed(context, '/nova_consulta_unid_atend');
+                      },
+                      child: Card(
+                        child: Center(
+                          child: Container(
+                            height: 150,
+                            width: 110,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: <Widget>[
+                                Container(
+                                  height: 55,
+                                  child: Image.asset(
+                                      'assets/drawable-xhdpi/010-calendar-2.png'),
                                 ),
-                              ),
-                              Center(
-                                child: Text(
-                                  "Consulta",
-                                  style: const TextStyle(
-                                      color: const Color(0xff3b4d57),
-                                      fontWeight: FontWeight.w700,
-                                      fontFamily: "Roboto",
-                                      fontStyle: FontStyle.normal,
-                                      fontSize: 14.0),
+                                Center(
+                                  child: Text(
+                                    "Nova",
+                                    style: const TextStyle(
+                                        color: const Color(0xff3b4d57),
+                                        fontWeight: FontWeight.w700,
+                                        fontFamily: "Roboto",
+                                        fontStyle: FontStyle.normal,
+                                        fontSize: 14.0),
+                                  ),
                                 ),
-                              ),
-                            ],
+                                Center(
+                                  child: Text(
+                                    "Consulta",
+                                    style: const TextStyle(
+                                        color: const Color(0xff3b4d57),
+                                        fontWeight: FontWeight.w700,
+                                        fontFamily: "Roboto",
+                                        fontStyle: FontStyle.normal,
+                                        fontSize: 14.0),
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       ),
@@ -223,17 +235,28 @@ class _HomeViewState extends State<HomeView> {
         type: BottomNavigationBarType.shifting,
         items: [
           BottomNavigationBarItem(
-              icon: Icon(Icons.home, color: _cIndex != 0 ? Color.fromARGB(255, 0, 0, 0) : Colors.blueAccent),
+              icon: Icon(Icons.home,
+                  color: _cIndex != 0
+                      ? Color.fromARGB(255, 0, 0, 0)
+                      : Colors.blueAccent),
               title: new Text('Home')),
           BottomNavigationBarItem(
-              icon: Icon(Icons.calendar_today, color: _cIndex != 1 ? Color.fromARGB(255, 0, 0, 0) : Colors.blueAccent),
+              icon: Icon(Icons.calendar_today,
+                  color: _cIndex != 1
+                      ? Color.fromARGB(255, 0, 0, 0)
+                      : Colors.blueAccent),
               title: new Text('')),
           BottomNavigationBarItem(
-              icon: Icon(Icons.person_pin, color: _cIndex != 2 ? Color.fromARGB(255, 0, 0, 0) : Colors.blueAccent),
+              icon: Icon(Icons.person_pin,
+                  color: _cIndex != 2
+                      ? Color.fromARGB(255, 0, 0, 0)
+                      : Colors.blueAccent),
               title: new Text('')),
           BottomNavigationBarItem(
-              icon:
-                  Icon(Icons.search, color: _cIndex != 3 ? Color.fromARGB(255, 0, 0, 0) : Colors.blueAccent),
+              icon: Icon(Icons.search,
+                  color: _cIndex != 3
+                      ? Color.fromARGB(255, 0, 0, 0)
+                      : Colors.blueAccent),
               title: new Text(''))
         ],
         onTap: (index) {
