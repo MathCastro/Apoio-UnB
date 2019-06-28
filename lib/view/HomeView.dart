@@ -1,3 +1,5 @@
+import 'package:apoio_unb/controller/ConsultaController.dart';
+import 'package:apoio_unb/model/ConsultaBO.dart';
 import 'package:apoio_unb/res/Colors.dart';
 import 'package:flutter/material.dart';
 
@@ -95,7 +97,8 @@ class _HomeViewState extends State<HomeView> {
                     ),
                     InkWell(
                       onTap: () {
-                        Navigator.pushNamed(context, '/nova_consulta_unid_atend');
+                        Navigator.pushNamed(
+                            context, '/nova_consulta_unid_atend');
                       },
                       child: Card(
                         child: Center(
@@ -224,6 +227,46 @@ class _HomeViewState extends State<HomeView> {
                       ),
                     ),
                   ],
+                ),
+                FutureBuilder(
+                  future: ConsultaController().getConsulta(),
+                  builder: (BuildContext context,
+                      AsyncSnapshot<List<ConsultaBO>> snapshot) {
+                    if (!snapshot.hasData)
+                      return Center(child: CircularProgressIndicator());
+                    return Center(
+                      child: ListView.builder(
+                        // scrollDirection: Axis.vertical,
+                        shrinkWrap: true,
+                        itemCount: snapshot.data.length,
+                        itemBuilder: (BuildContext ctxt, int index) {
+                          return Center(
+                            child: Card(
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              child: Container(
+                                width: 230,
+                                height: 50,
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text(
+                                    snapshot.data[index].unidade,
+                                    style: TextStyle(
+                                        color: colorMutedBlue,
+                                        fontWeight: FontWeight.w700,
+                                        fontFamily: "Roboto",
+                                        fontStyle: FontStyle.normal,
+                                        fontSize: 14.0),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          );
+                        },
+                      ),
+                    );
+                  },
                 ),
               ],
             ),

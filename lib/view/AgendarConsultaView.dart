@@ -1,3 +1,5 @@
+import 'package:apoio_unb/controller/ConsultaController.dart';
+import 'package:apoio_unb/model/Consulta.dart';
 import 'package:apoio_unb/res/Colors.dart';
 import 'package:flutter/material.dart';
 
@@ -18,13 +20,16 @@ class _AngendarConsultaViewState extends State<AngendarConsultaView> {
     if (picked != null && picked != selectedDate)
       setState(
         () {
+          Consulta.data = picked;
           selectedDate = picked;
+          ConsultaController().registerConsulta();
+          Navigator.pushNamed(context, '/consulta_agendada_com_sucesso');
         },
       );
   }
 
   @override
-  Widget build(BuildContext) {
+  Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
@@ -51,10 +56,30 @@ class _AngendarConsultaViewState extends State<AngendarConsultaView> {
             Center(
               child: RaisedButton(
                 color: colorMutedBlue,
-                onPressed: () => _selectDate(context),
-                child: Text('Clique aqui para selecionar a data', style: TextStyle(color: Colors.white),),
+                onPressed: () {
+                  _selectDate(context);
+                },
+                child: Text(
+                  'Clique aqui para selecionar a data',
+                  style: TextStyle(color: Colors.white),
+                ),
               ),
             ),
+            // Center(
+            //   child: RaisedButton(
+            //     color: colorMutedBlue,
+            //     onPressed: () {
+            //       Navigator.pushNamed(
+            //           context, '/consulta_agendada_com_sucesso');
+            //     },
+            //     child: Center(
+            //       child: Text(
+            //         "Agendar consulta",
+            //         style: TextStyle(color: Colors.white),
+            //       ),
+            //     ),
+            //   ),
+            // ),
           ],
         ),
       ),

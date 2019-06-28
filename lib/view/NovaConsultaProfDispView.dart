@@ -1,11 +1,20 @@
 import 'dart:io';
+import 'package:apoio_unb/model/Consulta.dart';
+
 import '../res/Colors.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 
-class NovaConsultaProfDispView extends StatelessWidget {
+class NovaConsultaProfDispView extends StatefulWidget {
   
+  @override
+  _NovaConsultaProfDispViewState createState() => _NovaConsultaProfDispViewState();
+}
+
+class _NovaConsultaProfDispViewState extends State<NovaConsultaProfDispView> {
+  int profissional = 1;
+
   @override
   Widget build(BuildContext context) {
     final double height = MediaQuery.of(context).size.height;
@@ -65,7 +74,13 @@ class NovaConsultaProfDispView extends StatelessWidget {
                         Radio(
                         value: 1,
                         activeColor: colorAquamarine,
-                        groupValue: 1, onChanged: (int value) {},
+                        groupValue: profissional,
+                          onChanged: (int value) {
+                            profissional = value;
+                            setState(
+                              () {},
+                            );
+                          },
                       ),
                         Text('Rodrigão da Massa'),
                       ],
@@ -73,9 +88,15 @@ class NovaConsultaProfDispView extends StatelessWidget {
                     Row(
                       children: <Widget>[
                         Radio(
-                        value: 1,
+                        value: 2,
                         activeColor: colorAquamarine,
-                        groupValue: 1, onChanged: (int value) {},
+                        groupValue: profissional,
+                          onChanged: (int value) {
+                            profissional = value;
+                            setState(
+                              () {},
+                            );
+                          },
                       ),
                         Text('Matheus Nerdão'),
                       ],
@@ -83,9 +104,15 @@ class NovaConsultaProfDispView extends StatelessWidget {
                     Row(
                       children: <Widget>[
                         Radio(
-                        value: 1,
+                        value: 3,
                         activeColor: colorAquamarine,
-                        groupValue: 1, onChanged: (int value) {},
+                        groupValue: profissional,
+                          onChanged: (int value) {
+                            profissional = value;
+                            setState(
+                              () {},
+                            );
+                          },
                       ),
                         Text('King Tchezarè'),
                       ],
@@ -93,9 +120,15 @@ class NovaConsultaProfDispView extends StatelessWidget {
                     Row(
                       children: <Widget>[
                         Radio(
-                        value: 1,
+                        value: 4,
                         activeColor: colorAquamarine,
-                        groupValue: 1, onChanged: (int value) {},
+                        groupValue: profissional,
+                          onChanged: (int value) {
+                            profissional = value;
+                            setState(
+                              () {},
+                            );
+                          },
                       ),
                         Text('Trollador do futuro'),
                       ],
@@ -103,6 +136,21 @@ class NovaConsultaProfDispView extends StatelessWidget {
                     RaisedButton(
                       color: colorMutedBlue,
                       onPressed: () {
+                        switch (profissional) {
+                          case 1:
+                            Consulta.profissional = "Rodrigo";
+                            break;
+                          case 2:
+                            Consulta.profissional = "Matheus";
+                            break;
+                          case 3:
+                            Consulta.profissional = "King";
+                            break;
+                          case 4:
+                            Consulta.profissional = "Trollador";
+                            break;
+                          default:
+                        }
                         Navigator.pushNamed(context, '/agendar_consulta');
                       },
                       child: Center(

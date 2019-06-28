@@ -1,4 +1,6 @@
 import 'dart:io';
+import 'package:apoio_unb/model/Consulta.dart';
+
 import '../res/Colors.dart';
 
 import 'package:flutter/material.dart';
@@ -134,6 +136,21 @@ class _NovaConsultaUnidAtendViewState extends State<NovaConsultaUnidAtendView> {
                     RaisedButton(
                       color: colorMutedBlue,
                       onPressed: () {
+                        switch (unidade) {
+                          case 1:
+                            Consulta.unidade = "Nepasd";
+                            break;
+                          case 2:
+                            Consulta.unidade = "SOU";
+                            break;
+                          case 3:
+                            Consulta.unidade = "Caep";
+                            break;
+                          case 4:
+                            Consulta.unidade = "Apta";
+                            break;
+                          default:
+                        }
                         Navigator.pushNamed(context, '/nova_consulta_area_atuacao');
                       },
                       child: Center(

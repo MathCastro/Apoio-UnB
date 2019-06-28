@@ -1,11 +1,21 @@
 import 'dart:io';
+import 'package:apoio_unb/model/Consulta.dart';
+
 import '../res/Colors.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 
-class NovaConsultaAreaAtuacaoView extends StatelessWidget {
-  
+class NovaConsultaAreaAtuacaoView extends StatefulWidget {
+  @override
+  _NovaConsultaAreaAtuacaoViewState createState() =>
+      _NovaConsultaAreaAtuacaoViewState();
+}
+
+class _NovaConsultaAreaAtuacaoViewState
+    extends State<NovaConsultaAreaAtuacaoView> {
+  int area = 1;
+
   @override
   Widget build(BuildContext context) {
     final double height = MediaQuery.of(context).size.height;
@@ -51,11 +61,12 @@ class NovaConsultaAreaAtuacaoView extends StatelessWidget {
                           Text(
                             "Selecione a área de atuação",
                             style: TextStyle(
-                                color: Colors.black,
-                                fontWeight: FontWeight.w500,
-                                fontFamily: "Roboto",
-                                fontStyle: FontStyle.normal,
-                                fontSize: 20.0),
+                              color: Colors.black,
+                              fontWeight: FontWeight.w500,
+                              fontFamily: "Roboto",
+                              fontStyle: FontStyle.normal,
+                              fontSize: 20.0,
+                            ),
                           ),
                         ],
                       ),
@@ -63,47 +74,87 @@ class NovaConsultaAreaAtuacaoView extends StatelessWidget {
                     Row(
                       children: <Widget>[
                         Radio(
-                        value: 1,
-                        activeColor: colorAquamarine,
-                        groupValue: 1, onChanged: (int value) {},
-                      ),
+                          value: 1,
+                          activeColor: colorAquamarine,
+                          groupValue: area,
+                          onChanged: (int value) {
+                            area = value;
+                            setState(
+                              () {},
+                            );
+                          },
+                        ),
                         Text('Psicologia'),
                       ],
                     ),
                     Row(
                       children: <Widget>[
                         Radio(
-                        value: 1,
-                        activeColor: colorAquamarine,
-                        groupValue: 1, onChanged: (int value) {},
-                      ),
+                          value: 2,
+                          activeColor: colorAquamarine,
+                          groupValue: area,
+                          onChanged: (int value) {
+                            area = value;
+                            setState(
+                              () {},
+                            );
+                          },
+                        ),
                         Text('Dependência'),
                       ],
                     ),
                     Row(
                       children: <Widget>[
                         Radio(
-                        value: 1,
-                        activeColor: colorAquamarine,
-                        groupValue: 1, onChanged: (int value) {},
-                      ),
+                          value: 3,
+                          activeColor: colorAquamarine,
+                          groupValue: area,
+                          onChanged: (int value) {
+                            area = value;
+                            setState(
+                              () {},
+                            );
+                          },
+                        ),
                         Text('Qualidade de vida'),
                       ],
                     ),
                     Row(
                       children: <Widget>[
                         Radio(
-                        value: 1,
-                        activeColor: colorAquamarine,
-                        groupValue: 1, onChanged: (int value) {},
-                      ),
+                          value: 4,
+                          activeColor: colorAquamarine,
+                          groupValue: area,
+                          onChanged: (int value) {
+                            area = value;
+                            setState(
+                              () {},
+                            );
+                          },
+                        ),
                         Text('Necessidades especiais'),
                       ],
                     ),
                     RaisedButton(
                       color: colorMutedBlue,
                       onPressed: () {
-                        Navigator.pushNamed(context, '/nova_consulta_prof_disp');
+                        switch (area) {
+                          case 1:
+                            Consulta.area = "Psicologia";
+                            break;
+                          case 2:
+                            Consulta.area = "Dependência";
+                            break;
+                          case 3:
+                            Consulta.area = "Qualidade de vida";
+                            break;
+                          case 4:
+                            Consulta.area = "Necessidades especiais";
+                            break;
+                          default:
+                        }
+                        Navigator.pushNamed(
+                            context, '/nova_consulta_prof_disp');
                       },
                       child: Center(
                         child: Text(
