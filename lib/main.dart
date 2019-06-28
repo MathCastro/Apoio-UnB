@@ -11,6 +11,7 @@ import 'view/RegistrarView.dart';
 import 'view/ProfileView.dart';
 import 'view/AtendimentoInicialView.dart';
 import 'view/InfoUnidadeView.dart';
+import 'view/PesquisaUnidadeView.dart';
 
 void main() => runApp(MyApp());
 
@@ -45,7 +46,8 @@ class MyApp extends StatelessWidget {
         '/consulta_agendada_com_sucesso' : (context) => ConsultaAgendadaComSucessoView(),
         '/home': (context) => HomeView(),
         '/agendar_consulta': (context) => AngendarConsultaView(),
-        '/info_unidade': (context) => InfoUnidadelView(),
+        '/pesquisar_unidade': (context) => PesquisaUnidadeView(),
+        '/info_unidade': (context) => InfoUnidadeView(),
       }
     );
   }

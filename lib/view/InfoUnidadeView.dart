@@ -4,7 +4,7 @@ import '../res/Colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 
-class InfoUnidadelView extends StatelessWidget {
+class InfoUnidadeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final double height = MediaQuery.of(context).size.height;
