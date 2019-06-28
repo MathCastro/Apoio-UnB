@@ -63,6 +63,8 @@ flutter:
     - assets/drawable-xhdpi/010-calendar-2.png
     - assets/drawable-xhdpi/calendar.png
     - assets/drawable-xhdpi/009-map-1.png
+    - assets/drawable-xhdpi/imagem-info-atendimento.png
+    
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

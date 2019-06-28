@@ -8,6 +8,7 @@ import 'view/FirstView.dart';
 import 'view/RegistrarView.dart';
 import 'view/ProfileView.dart';
 import 'view/AtendimentoInicialView.dart';
+import 'view/InfoUnidadeView.dart';
 
 void main() => runApp(MyApp());
 
@@ -40,6 +41,7 @@ class MyApp extends StatelessWidget {
         '/nova_consulta_area_atuacao' : (context) => NovaConsultaAreaAtuacaoView(),
         '/nova_consulta_prof_disp' : (context) => NovaConsultaProfDispView(),
         '/home': (context) => HomeView(),
+        '/info_unidade': (context) => InfoUnidadelView(),
       }
     );
   }
