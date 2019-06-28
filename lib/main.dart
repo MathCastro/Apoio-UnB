@@ -1,4 +1,5 @@
 import 'package:apoio_unb/view/AgendarConsultaView.dart';
+import 'package:apoio_unb/view/ConsultaAgendadaComSucessoView.dart';
 import 'package:apoio_unb/view/NovaConsultaAreaAtuacaoView.dart';
 import 'package:apoio_unb/view/NovaConsultaProfDispView.dart';
 import 'package:apoio_unb/view/NovaConsultaUnidAtendView.dart';
@@ -9,6 +10,7 @@ import 'view/FirstView.dart';
 import 'view/RegistrarView.dart';
 import 'view/ProfileView.dart';
 import 'view/AtendimentoInicialView.dart';
+import 'view/InfoUnidadeView.dart';
 
 void main() => runApp(MyApp());
 
@@ -40,8 +42,10 @@ class MyApp extends StatelessWidget {
         '/nova_consulta_unid_atend' : (context) => NovaConsultaUnidAtendView(),
         '/nova_consulta_area_atuacao' : (context) => NovaConsultaAreaAtuacaoView(),
         '/nova_consulta_prof_disp' : (context) => NovaConsultaProfDispView(),
+        '/consulta_agendada_com_sucesso' : (context) => ConsultaAgendadaComSucessoView(),
         '/home': (context) => HomeView(),
         '/agendar_consulta': (context) => AngendarConsultaView(),
+        '/info_unidade': (context) => InfoUnidadelView(),
       }
     );
   }
