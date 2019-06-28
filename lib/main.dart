@@ -27,10 +27,11 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => AtendimentoInicialView(),
+        '/': (context) => FirstView(),
         '/login': (context) => LoginView(),
         '/registrar': (context) => RegistrarView(),
         '/perfil' : (context) => ProfileView(),
+        '/formulario_inicial' : (context) => AtendimentoInicialView(),
       }
     );
   }
