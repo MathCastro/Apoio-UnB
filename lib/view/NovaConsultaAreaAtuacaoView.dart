@@ -46,7 +46,7 @@ class NovaConsultaAreaAtuacaoView extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(top: 100),
               child: Image.asset(
-                'assets/drawable-xhdpi/illustration-unidades-de-atendimento.png',
+                'assets/drawable-xhdpi/illustration-area-de-atuacao.png',
                 width: width - 180,
               ),
             ),
@@ -65,7 +65,7 @@ class NovaConsultaAreaAtuacaoView extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
                           Text(
-                            "Unidade de Atendimento",
+                            "Selecione a área de atuação",
                             style: TextStyle(
                                 color: Colors.black,
                                 fontWeight: FontWeight.w500,
@@ -83,7 +83,7 @@ class NovaConsultaAreaAtuacaoView extends StatelessWidget {
                         activeColor: colorAquamarine,
                         groupValue: 1, onChanged: (int value) {},
                       ),
-                        Text('Nepasd'),
+                        Text('Psicologia'),
                       ],
                     ),
                     Row(
@@ -93,7 +93,7 @@ class NovaConsultaAreaAtuacaoView extends StatelessWidget {
                         activeColor: colorAquamarine,
                         groupValue: 1, onChanged: (int value) {},
                       ),
-                        Text('SOU'),
+                        Text('Dependência'),
                       ],
                     ),
                     Row(
@@ -103,7 +103,7 @@ class NovaConsultaAreaAtuacaoView extends StatelessWidget {
                         activeColor: colorAquamarine,
                         groupValue: 1, onChanged: (int value) {},
                       ),
-                        Text('Caep'),
+                        Text('Qualidade de vida'),
                       ],
                     ),
                     Row(
@@ -113,7 +113,7 @@ class NovaConsultaAreaAtuacaoView extends StatelessWidget {
                         activeColor: colorAquamarine,
                         groupValue: 1, onChanged: (int value) {},
                       ),
-                        Text('Apta'),
+                        Text('Necessidades especiais'),
                       ],
                     ),
                     RaisedButton(
