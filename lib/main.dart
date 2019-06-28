@@ -1,3 +1,4 @@
+import 'package:apoio_unb/view/HomeView.dart';
 import 'package:flutter/material.dart';
 import 'view/LoginView.dart';
 import 'view/FirstView.dart';
@@ -32,6 +33,7 @@ class MyApp extends StatelessWidget {
         '/registrar': (context) => RegistrarView(),
         '/perfil' : (context) => ProfileView(),
         '/formulario_inicial' : (context) => AtendimentoInicialView(),
+        '/home': (context) => HomeView(),
       }
     );
   }

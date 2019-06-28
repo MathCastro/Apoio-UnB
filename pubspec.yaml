@@ -56,7 +56,10 @@ flutter:
     - assets/drawable-xhdpi/Repetição de grade 17.png
     - assets/drawable-xhdpi/Icon - Search - Filled.png
     - assets/drawable-xhdpi/illustration-novo-formulario.png
-
+    - assets/drawable-xhdpi/notepad.png
+    - assets/drawable-xhdpi/010-calendar-2.png
+    - assets/drawable-xhdpi/calendar.png
+    - assets/drawable-xhdpi/009-map-1.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

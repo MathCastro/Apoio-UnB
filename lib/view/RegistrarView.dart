@@ -283,13 +283,15 @@ class MyCustomFormState extends State<MyCustomForm> {
           ),
           Padding(
             padding: const EdgeInsets.only(top: 8, left: 20, right: 20),
-            child: Text("Confirmar senha:",
-                style: TextStyle(
-                    color: colorMutedBlue,
-                    fontWeight: FontWeight.w700,
-                    fontFamily: "Roboto",
-                    fontStyle: FontStyle.normal,
-                    fontSize: 14.0)),
+            child: Text(
+              "Confirmar senha:",
+              style: TextStyle(
+                  color: colorMutedBlue,
+                  fontWeight: FontWeight.w700,
+                  fontFamily: "Roboto",
+                  fontStyle: FontStyle.normal,
+                  fontSize: 14.0),
+            ),
           ),
           Padding(
             padding:
@@ -298,12 +300,13 @@ class MyCustomFormState extends State<MyCustomForm> {
               height: 35,
               child: TextFormField(
                 decoration: InputDecoration(
-                    border: OutlineInputBorder(
-                  borderSide: BorderSide(
-                      color: colorMutedBlue,
-                      style: BorderStyle.solid,
-                      width: 0.8),
-                )),
+                  border: OutlineInputBorder(
+                    borderSide: BorderSide(
+                        color: colorMutedBlue,
+                        style: BorderStyle.solid,
+                        width: 0.8),
+                  ),
+                ),
                 validator: (value) {
                   if (value.isEmpty) {
                     return 'Enter some text';
@@ -334,11 +337,11 @@ class MyCustomFormState extends State<MyCustomForm> {
                           SnackBar(content: Text('Processing Data')));
 
                       AuthController().registerUser(_user);
-                      Navigator.pushNamed(context, '/');
+                      Navigator.pushNamed(context, '/formulario_inicial');
+
                       print('Printing the login data.');
                       print('User: ${_user.toString()}');
-                    }
-                    Navigator.pushNamed(context, '/formulario_inicial');
+                    }                  
                   },
                   child: Center(
                     child: Text(
