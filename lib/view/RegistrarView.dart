@@ -1,3 +1,5 @@
+import 'package:apoio_unb/controller/auth/AuthController.dart';
+import 'package:apoio_unb/model/User.dart';
 import 'package:apoio_unb/res/Colors.dart';
 import 'package:flutter/material.dart';
 
@@ -9,24 +11,24 @@ class RegistrarView extends StatelessWidget {
     return Scaffold(
         resizeToAvoidBottomInset: false,
         body: SingleChildScrollView(
-                  child: Center(
-                    child: Padding(
-                      padding: const EdgeInsets.only(top: 30),
-                      child: Card(
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          elevation: 4,
-                          child: Container(
-                          width: width - 72,
-                          child: Padding(
-                            padding: const EdgeInsets.all(16.0),
-                            child: MyCustomForm(),
-                          ),
-                        ),
-                      ),
-                    ),
+          child: Center(
+            child: Padding(
+              padding: const EdgeInsets.only(top: 30),
+              child: Card(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                elevation: 4,
+                child: Container(
+                  width: width - 72,
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: MyCustomForm(),
                   ),
+                ),
+              ),
+            ),
+          ),
         ));
   }
 }
@@ -48,6 +50,7 @@ class MyCustomFormState extends State<MyCustomForm> {
   // Note: This is a GlobalKey<FormState>,
   // not a GlobalKey<MyCustomFormState>.
   final _formKey = GlobalKey<FormState>();
+  User _user = User();
 
   @override
   Widget build(BuildContext context) {
@@ -62,13 +65,15 @@ class MyCustomFormState extends State<MyCustomForm> {
           Center(
             child: Padding(
               padding: const EdgeInsets.only(top: 10, bottom: 10),
-              child: Text("Registrar",
-                  style: TextStyle(
-                      color: colorMutedBlue,
-                      fontWeight: FontWeight.w500,
-                      fontFamily: "Roboto",
-                      fontStyle: FontStyle.normal,
-                      fontSize: 20.0)),
+              child: Text(
+                "Registrar",
+                style: TextStyle(
+                    color: colorMutedBlue,
+                    fontWeight: FontWeight.w500,
+                    fontFamily: "Roboto",
+                    fontStyle: FontStyle.normal,
+                    fontSize: 20.0),
+              ),
             ),
           ),
           Padding(
@@ -92,17 +97,21 @@ class MyCustomFormState extends State<MyCustomForm> {
               height: 35,
               child: TextFormField(
                 decoration: InputDecoration(
-                    border: OutlineInputBorder(
-                  borderSide: BorderSide(
-                      color: colorMutedBlue,
-                      style: BorderStyle.solid,
-                      width: 0.8),
-                )),
+                  border: OutlineInputBorder(
+                    borderSide: BorderSide(
+                        color: colorMutedBlue,
+                        style: BorderStyle.solid,
+                        width: 0.8),
+                  ),
+                ),
                 validator: (value) {
                   if (value.isEmpty) {
                     return 'Enter some text';
                   }
                   return null;
+                },
+                onSaved: (String value) {
+                  this._user.name = value;
                 },
               ),
             ),
@@ -140,41 +149,8 @@ class MyCustomFormState extends State<MyCustomForm> {
                   }
                   return null;
                 },
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(
-              top: 8,
-              left: 20,
-              right: 20,
-            ),
-            child: Text("Matrícula:",
-                style: TextStyle(
-                    color: colorMutedBlue,
-                    fontWeight: FontWeight.w700,
-                    fontFamily: "Roboto",
-                    fontStyle: FontStyle.normal,
-                    fontSize: 14.0)),
-          ),
-          Padding(
-            padding:
-                const EdgeInsets.only(top: 8, left: 20, right: 20, bottom: 4),
-            child: Container(
-              height: 35,
-              child: TextFormField(
-                decoration: InputDecoration(
-                    border: OutlineInputBorder(
-                  borderSide: BorderSide(
-                      color: colorMutedBlue,
-                      style: BorderStyle.solid,
-                      width: 0.8),
-                )),
-                validator: (value) {
-                  if (value.isEmpty) {
-                    return 'Enter some text';
-                  }
-                  return null;
+                onSaved: (String value) {
+                  this._user.email = value;
                 },
               ),
             ),
@@ -185,13 +161,15 @@ class MyCustomFormState extends State<MyCustomForm> {
               left: 20,
               right: 20,
             ),
-            child: Text("Telefone:",
-                style: TextStyle(
-                    color: colorMutedBlue,
-                    fontWeight: FontWeight.w700,
-                    fontFamily: "Roboto",
-                    fontStyle: FontStyle.normal,
-                    fontSize: 14.0)),
+            child: Text(
+              "Matrícula:",
+              style: TextStyle(
+                  color: colorMutedBlue,
+                  fontWeight: FontWeight.w700,
+                  fontFamily: "Roboto",
+                  fontStyle: FontStyle.normal,
+                  fontSize: 14.0),
+            ),
           ),
           Padding(
             padding:
@@ -200,17 +178,21 @@ class MyCustomFormState extends State<MyCustomForm> {
               height: 35,
               child: TextFormField(
                 decoration: InputDecoration(
-                    border: OutlineInputBorder(
-                  borderSide: BorderSide(
-                      color: colorMutedBlue,
-                      style: BorderStyle.solid,
-                      width: 0.8),
-                )),
+                  border: OutlineInputBorder(
+                    borderSide: BorderSide(
+                        color: colorMutedBlue,
+                        style: BorderStyle.solid,
+                        width: 0.8),
+                  ),
+                ),
                 validator: (value) {
                   if (value.isEmpty) {
                     return 'Enter some text';
                   }
                   return null;
+                },
+                onSaved: (String value) {
+                  this._user.matricula = value;
                 },
               ),
             ),
@@ -221,13 +203,15 @@ class MyCustomFormState extends State<MyCustomForm> {
               left: 20,
               right: 20,
             ),
-            child: Text("Senha:",
-                style: TextStyle(
-                    color: colorMutedBlue,
-                    fontWeight: FontWeight.w700,
-                    fontFamily: "Roboto",
-                    fontStyle: FontStyle.normal,
-                    fontSize: 14.0)),
+            child: Text(
+              "Telefone:",
+              style: TextStyle(
+                  color: colorMutedBlue,
+                  fontWeight: FontWeight.w700,
+                  fontFamily: "Roboto",
+                  fontStyle: FontStyle.normal,
+                  fontSize: 14.0),
+            ),
           ),
           Padding(
             padding:
@@ -236,17 +220,63 @@ class MyCustomFormState extends State<MyCustomForm> {
               height: 35,
               child: TextFormField(
                 decoration: InputDecoration(
-                    border: OutlineInputBorder(
-                  borderSide: BorderSide(
-                      color: colorMutedBlue,
-                      style: BorderStyle.solid,
-                      width: 0.8),
-                )),
+                  border: OutlineInputBorder(
+                    borderSide: BorderSide(
+                        color: colorMutedBlue,
+                        style: BorderStyle.solid,
+                        width: 0.8),
+                  ),
+                ),
                 validator: (value) {
                   if (value.isEmpty) {
                     return 'Enter some text';
                   }
                   return null;
+                },
+                onSaved: (String value) {
+                  this._user.phone = value;
+                },
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(
+              top: 8,
+              left: 20,
+              right: 20,
+            ),
+            child: Text(
+              "Senha:",
+              style: TextStyle(
+                  color: colorMutedBlue,
+                  fontWeight: FontWeight.w700,
+                  fontFamily: "Roboto",
+                  fontStyle: FontStyle.normal,
+                  fontSize: 14.0),
+            ),
+          ),
+          Padding(
+            padding:
+                const EdgeInsets.only(top: 8, left: 20, right: 20, bottom: 4),
+            child: Container(
+              height: 35,
+              child: TextFormField(
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(
+                    borderSide: BorderSide(
+                        color: colorMutedBlue,
+                        style: BorderStyle.solid,
+                        width: 0.8),
+                  ),
+                ),
+                validator: (value) {
+                  if (value.isEmpty) {
+                    return 'Enter some text';
+                  }
+                  return null;
+                },
+                onSaved: (String value) {
+                  this._user.password = value;
                 },
               ),
             ),
@@ -285,7 +315,8 @@ class MyCustomFormState extends State<MyCustomForm> {
           ),
           Center(
             child: Padding(
-              padding: const EdgeInsets.only(top: 30, left: 20, right: 20, bottom: 4),
+              padding: const EdgeInsets.only(
+                  top: 30, left: 20, right: 20, bottom: 4),
               child: SizedBox(
                 width: width - 72 - 56,
                 child: OutlineButton(
@@ -296,7 +327,18 @@ class MyCustomFormState extends State<MyCustomForm> {
                   ),
                   color: Colors.white,
                   onPressed: () {
-                    Navigator.pushNamed(context, '/registrar');
+                    if (_formKey.currentState.validate()) {
+                      _formKey.currentState.save();
+                      // If the form is valid, we want to show a Snackbar
+                      Scaffold.of(context).showSnackBar(
+                          SnackBar(content: Text('Processing Data')));
+
+                      AuthController().registerUser(_user);
+                      Navigator.pushNamed(context, '/');
+                      print('Printing the login data.');
+                      print('User: ${_user.toString()}');
+                    }
+                    Navigator.pushNamed(context, '/formulario_inicial');
                   },
                   child: Center(
                     child: Text(
