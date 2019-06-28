@@ -338,7 +338,7 @@ class MyCustomFormState extends State<MyCustomForm> {
                       print('Printing the login data.');
                       print('User: ${_user.toString()}');
                     }
-                    Navigator.pushNamed(context, '/formulario_inicial');
+                    Navigator.pushNamed(context, '/nova_consulta_unid_atend');
                   },
                   child: Center(
                     child: Text(
