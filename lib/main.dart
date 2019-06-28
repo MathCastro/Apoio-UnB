@@ -37,11 +37,8 @@ class MyApp extends StatelessWidget {
         '/registrar': (context) => RegistrarView(),
         '/perfil' : (context) => ProfileView(),
         '/formulario_inicial' : (context) => AtendimentoInicialView(),
-<<<<<<< HEAD
         '/nova_consulta_unid_atend' : (context) => NovaConsultaUnidAtendView(),
-=======
         '/home': (context) => HomeView(),
->>>>>>> c044fe4a041e24338b01c324281b2639dbfbc64b
       }
     );
   }
