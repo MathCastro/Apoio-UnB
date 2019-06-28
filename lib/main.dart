@@ -1,3 +1,4 @@
+import 'package:apoio_unb/view/ConsultaAgendadaComSucessoView.dart';
 import 'package:apoio_unb/view/NovaConsultaAreaAtuacaoView.dart';
 import 'package:apoio_unb/view/NovaConsultaProfDispView.dart';
 import 'package:apoio_unb/view/NovaConsultaUnidAtendView.dart';
@@ -39,6 +40,7 @@ class MyApp extends StatelessWidget {
         '/nova_consulta_unid_atend' : (context) => NovaConsultaUnidAtendView(),
         '/nova_consulta_area_atuacao' : (context) => NovaConsultaAreaAtuacaoView(),
         '/nova_consulta_prof_disp' : (context) => NovaConsultaProfDispView(),
+        '/consulta_agendada_com_sucesso' : (context) => ConsultaAgendadaComSucessoView(),
         '/home': (context) => HomeView(),
       }
     );
