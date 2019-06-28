@@ -1,3 +1,5 @@
+import 'package:apoio_unb/view/NovaConsultaAreaAtuacaoView.dart';
+import 'package:apoio_unb/view/NovaConsultaProfDispView.dart';
 import 'package:apoio_unb/view/NovaConsultaUnidAtendView.dart';
 import 'package:apoio_unb/view/HomeView.dart';
 import 'package:flutter/material.dart';
@@ -35,6 +37,8 @@ class MyApp extends StatelessWidget {
         '/perfil' : (context) => ProfileView(),
         '/formulario_inicial' : (context) => AtendimentoInicialView(),
         '/nova_consulta_unid_atend' : (context) => NovaConsultaUnidAtendView(),
+        '/nova_consulta_area_atuacao' : (context) => NovaConsultaAreaAtuacaoView(),
+        '/nova_consulta_prof_disp' : (context) => NovaConsultaProfDispView(),
         '/home': (context) => HomeView(),
       }
     );
