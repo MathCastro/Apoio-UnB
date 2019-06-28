@@ -82,7 +82,7 @@ class FirstView extends StatelessWidget {
                             ),
                             color: Colors.white,
                             onPressed: () {
-                              Navigator.pushNamed(context, '/pesquisa1');
+                              Navigator.pushNamed(context, '/registrar');
                             },
                             child: Center(
                               child: Text(
