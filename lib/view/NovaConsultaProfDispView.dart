@@ -103,7 +103,7 @@ class NovaConsultaProfDispView extends StatelessWidget {
                     RaisedButton(
                       color: colorMutedBlue,
                       onPressed: () {
-                        Navigator.pushNamed(context, '/home');
+                        Navigator.pushNamed(context, '/agendar_consulta');
                       },
                       child: Center(
                         child: Text(
