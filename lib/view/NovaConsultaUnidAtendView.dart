@@ -4,8 +4,15 @@ import '../res/Colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 
-class NovaConsultaUnidAtendView extends StatelessWidget {
-  
+class NovaConsultaUnidAtendView extends StatefulWidget {
+  @override
+  _NovaConsultaUnidAtendViewState createState() =>
+      _NovaConsultaUnidAtendViewState();
+}
+
+class _NovaConsultaUnidAtendViewState extends State<NovaConsultaUnidAtendView> {
+  int unidade = 1;
+
   @override
   Widget build(BuildContext context) {
     final double height = MediaQuery.of(context).size.height;
@@ -79,47 +86,70 @@ class NovaConsultaUnidAtendView extends StatelessWidget {
                     Row(
                       children: <Widget>[
                         Radio(
-                        value: 1,
-                        activeColor: colorAquamarine,
-                        groupValue: 1, onChanged: (int value) {},
-                      ),
+                          value: 1,
+                          activeColor: colorAquamarine,
+                          groupValue: unidade,
+                          onChanged: (int value) {
+                            unidade = value;
+                            setState(
+                              () {},
+                            );
+                          },
+                        ),
                         Text('Nepasd'),
                       ],
                     ),
                     Row(
                       children: <Widget>[
                         Radio(
-                        value: 1,
-                        activeColor: colorAquamarine,
-                        groupValue: 1, onChanged: (int value) {},
-                      ),
+                          value: 2,
+                          activeColor: colorAquamarine,
+                          groupValue: unidade,
+                          onChanged: (int value) {
+                            unidade = value;
+                            setState(
+                              () {},
+                            );
+                          },
+                        ),
                         Text('SOU'),
                       ],
                     ),
                     Row(
                       children: <Widget>[
                         Radio(
-                        value: 1,
-                        activeColor: colorAquamarine,
-                        groupValue: 1, onChanged: (int value) {},
-                      ),
+                          value: 3,
+                          activeColor: colorAquamarine,
+                          groupValue: unidade,
+                          onChanged: (int value) {
+                            unidade = value;
+                            setState(
+                              () {},
+                            );
+                          },
+                        ),
                         Text('Caep'),
                       ],
                     ),
                     Row(
                       children: <Widget>[
                         Radio(
-                        value: 1,
-                        activeColor: colorAquamarine,
-                        groupValue: 1, onChanged: (int value) {},
-                      ),
+                          value: 4,
+                          activeColor: colorAquamarine,
+                          groupValue: unidade,
+                          onChanged: (int value) {
+                            unidade = value;
+                            setState(
+                              () {},
+                            );
+                          },
+                        ),
                         Text('Apta'),
                       ],
                     ),
                     RaisedButton(
                       color: colorMutedBlue,
-                      onPressed: () {
-                      },
+                      onPressed: () {},
                       child: Center(
                         child: Text(
                           "Próximo",
