@@ -24,18 +24,18 @@ class NovaConsultaAreaAtuacaoView extends StatelessWidget {
           alignment: Alignment.topCenter,
           children: <Widget>[
             Container(
-              height: height * 0.5,
+              height: height * 0.4,
               color: colorLightBlueGreyTwo,
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 100),
+              padding: const EdgeInsets.only(top: 45),
               child: Image.asset(
                 'assets/drawable-xhdpi/illustration-area-de-atuacao.png',
                 width: width - 180,
               ),
             ),
             Positioned(
-              top: height * 0.5,
+              top: height * 0.4,
               child: Container(
                 width: width - 72,
                 height: height * 0.5,
@@ -103,6 +103,7 @@ class NovaConsultaAreaAtuacaoView extends StatelessWidget {
                     RaisedButton(
                       color: colorMutedBlue,
                       onPressed: () {
+                        Navigator.pushNamed(context, '/nova_consulta_prof_disp');
                       },
                       child: Center(
                         child: Text(

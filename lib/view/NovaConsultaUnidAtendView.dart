@@ -18,47 +18,31 @@ class _NovaConsultaUnidAtendViewState extends State<NovaConsultaUnidAtendView> {
     final double height = MediaQuery.of(context).size.height;
     final double width = MediaQuery.of(context).size.width;
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        title: Text(
+          "Nova Consulta",
+          style: TextStyle(color: Colors.black),
+        ),
+      ),
       body: Container(
         height: height,
         child: Stack(
           alignment: Alignment.topCenter,
           children: <Widget>[
             Container(
-              height: height * 0.5,
+              height: height * 0.4,
               color: colorLightBlueGreyTwo,
             ),
             Padding(
-                padding: const EdgeInsets.only(top: 22.0, bottom: 40.0),
-                child: Container(
-                  color: Colors.white,
-                  width: width,
-                  height: 48.0,
-                  child: Padding(
-                      padding: const EdgeInsets.only(left: 35.0),
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: <Widget>[
-                          Text(
-                            "Nova Consulta",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontWeight: FontWeight.w500,
-                                fontFamily: "Roboto",
-                                fontStyle: FontStyle.normal,
-                                fontSize: 20.0),
-                          ),
-                        ],
-                      )),
-                )),
-            Padding(
-              padding: const EdgeInsets.only(top: 100),
+              padding: const EdgeInsets.only(top: 45),
               child: Image.asset(
                 'assets/drawable-xhdpi/illustration-unidades-de-atendimento.png',
                 width: width - 180,
               ),
             ),
             Positioned(
-              top: height * 0.5,
+              top: height * 0.4,
               child: Container(
                 width: width - 72,
                 height: height * 0.5,
@@ -149,7 +133,9 @@ class _NovaConsultaUnidAtendViewState extends State<NovaConsultaUnidAtendView> {
                     ),
                     RaisedButton(
                       color: colorMutedBlue,
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/nova_consulta_area_atuacao');
+                      },
                       child: Center(
                         child: Text(
                           "Próximo",
