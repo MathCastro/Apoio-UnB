@@ -3,13 +3,20 @@ import 'package:apoio_unb/model/User.dart';
 import 'package:apoio_unb/res/Colors.dart';
 import 'package:flutter/material.dart';
 
-class RegistrarView extends StatelessWidget {
+class Pesquisa2View extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final double height = MediaQuery.of(context).size.height;
     final double width = MediaQuery.of(context).size.width;
     return Scaffold(
         resizeToAvoidBottomInset: false,
+        appBar: AppBar(
+        backgroundColor: Colors.white,
+        title: Text(
+          "Formulário de Atendimento",
+          style: TextStyle(color: Colors.black),
+        ),
+      ),
         body: SingleChildScrollView(
           child: Center(
             child: Padding(
@@ -23,7 +30,7 @@ class RegistrarView extends StatelessWidget {
                   width: width - 72,
                   child: Padding(
                     padding: const EdgeInsets.all(16.0),
-                    child: MyCustomForm(),
+                    child: Text(""),
                   ),
                 ),
               ),
@@ -269,7 +276,6 @@ class MyCustomFormState extends State<MyCustomForm> {
                         width: 0.8),
                   ),
                 ),
-                obscureText: true,
                 validator: (value) {
                   if (value.isEmpty) {
                     return 'Enter some text';
@@ -308,7 +314,6 @@ class MyCustomFormState extends State<MyCustomForm> {
                         width: 0.8),
                   ),
                 ),
-                obscureText: true,
                 validator: (value) {
                   if (value.isEmpty) {
                     return 'Enter some text';

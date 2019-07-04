@@ -4,6 +4,8 @@ import 'package:apoio_unb/view/NovaConsultaAreaAtuacaoView.dart';
 import 'package:apoio_unb/view/NovaConsultaProfDispView.dart';
 import 'package:apoio_unb/view/NovaConsultaUnidAtendView.dart';
 import 'package:apoio_unb/view/HomeView.dart';
+import 'package:apoio_unb/view/Pesquisa1View.dart';
+import 'package:apoio_unb/view/Pesquisa2View.dart';
 import 'package:flutter/material.dart';
 import 'view/LoginView.dart';
 import 'view/FirstView.dart';
@@ -48,6 +50,9 @@ class MyApp extends StatelessWidget {
         '/agendar_consulta': (context) => AngendarConsultaView(),
         '/pesquisar_unidade': (context) => PesquisaUnidadeView(),
         '/info_unidade': (context) => InfoUnidadeView(),
+        '/pesquisa1': (context) => Pesquisa1View(),
+        '/pesquisa2': (context) => Pesquisa2View(),
+
       }
     );
   }

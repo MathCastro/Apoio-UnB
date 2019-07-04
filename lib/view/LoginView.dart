@@ -85,6 +85,7 @@ class _LoginViewState extends State<LoginView> {
                                       ),
                                     ),
                                   ),
+                                  initialValue: "admin@admin.com",
                                   onSaved: (String value) {
                                     email = value;
                                   },
@@ -124,6 +125,8 @@ class _LoginViewState extends State<LoginView> {
                                       ),
                                     ),
                                   ),
+                                  initialValue: "admin123",
+                                  obscureText: true,
                                   onSaved: (String value) {
                                     password = value;
                                   },
