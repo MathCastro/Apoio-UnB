@@ -20,11 +20,40 @@ class _LoginViewState extends State<LoginView> {
     final double height = MediaQuery.of(context).size.height;
     final double width = MediaQuery.of(context).size.width;
     return Scaffold(
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.only(top: 370.0),
-          child: Center(
-            child: Container(
+      body: Container(
+        height: height,
+        child: Stack(
+          alignment: Alignment.topCenter,
+          children: <Widget>[
+            Container(
+              height: height * 0.8,
+              color: colorLightBlueGreyTwo,
+              child: Align(
+                alignment: Alignment.bottomCenter,
+                child: Image.asset('assets/drawable-xhdpi/Flores-fundo.png'),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(40.0),
+              child: Text(
+                "Agende e facilite seu atendimento com o Apoio UnB!",
+                style: TextStyle(
+                    color: colorMutedBlue,
+                    fontWeight: FontWeight.w500,
+                    fontFamily: "Roboto",
+                    fontStyle: FontStyle.normal,
+                    fontSize: 20.0),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 140),
+              child: Image.asset(
+                'assets/drawable-xhdpi/logo-apoio-unb.png',
+                width: width - 144,
+              ),
+            ),
+            Positioned(
+              top: height * 0.8 - 150,
               child: Card(
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10),
@@ -157,7 +186,7 @@ class _LoginViewState extends State<LoginView> {
                 ),
               ),
             ),
-          ),
+          ],
         ),
       ),
     );
@@ -171,3 +200,9 @@ class _LoginViewState extends State<LoginView> {
     }
   }
 }
+
+// -------------------------------------------------------------------------------------------------------
+
+
+
+
