@@ -56,8 +56,8 @@ class _HomeViewState extends State<HomeView> {
                       },
                       child: Card(
                         shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10.0),
-                      ),
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
                         elevation: 6,
                         child: Center(
                           child: Container(
@@ -72,7 +72,7 @@ class _HomeViewState extends State<HomeView> {
                                       'assets/drawable-xhdpi/notepad.png'),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsets.only(top:16.0),
+                                  padding: const EdgeInsets.only(top: 16.0),
                                   child: Center(
                                     child: Text(
                                       "Novo",
@@ -109,8 +109,8 @@ class _HomeViewState extends State<HomeView> {
                       },
                       child: Card(
                         shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10.0),
-                      ),
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
                         elevation: 6,
                         child: Center(
                           child: Container(
@@ -125,7 +125,7 @@ class _HomeViewState extends State<HomeView> {
                                       'assets/drawable-xhdpi/010-calendar-2.png'),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsets.only(top:16.0),
+                                  padding: const EdgeInsets.only(top: 16.0),
                                   child: Center(
                                     child: Text(
                                       "Nova",
@@ -178,7 +178,7 @@ class _HomeViewState extends State<HomeView> {
                                     'assets/drawable-xhdpi/calendar.png'),
                               ),
                               Padding(
-                                padding: const EdgeInsets.only(top:16.0),
+                                padding: const EdgeInsets.only(top: 16.0),
                                 child: Center(
                                   child: Text(
                                     "Minha",
@@ -225,7 +225,7 @@ class _HomeViewState extends State<HomeView> {
                                     'assets/drawable-xhdpi/009-map-1.png'),
                               ),
                               Padding(
-                                padding: const EdgeInsets.only(top:16.0),
+                                padding: const EdgeInsets.only(top: 16.0),
                                 child: Center(
                                   child: Text(
                                     "Pesquisar",
@@ -274,26 +274,27 @@ class _HomeViewState extends State<HomeView> {
                                 borderRadius: BorderRadius.circular(10),
                               ),
                               child: Container(
-                                width: width*0.8,
-                                height: height/9,
+                                width: width * 0.8,
+                                height: 65,
                                 child: Row(
                                   children: <Widget>[
                                     Container(
-                                      height: height/9,
+                                      height: 65,
                                       width: 8,
                                       decoration: BoxDecoration(
-                                        color: colorAquamarine,
-                                        borderRadius: BorderRadius.only(
-                                          topLeft: Radius.circular(8.0),
-                                          bottomLeft: Radius.circular(8.0),
-                                        )
-                                      ),
+                                          color: colorAquamarine,
+                                          borderRadius: BorderRadius.only(
+                                            topLeft: Radius.circular(8.0),
+                                            bottomLeft: Radius.circular(8.0),
+                                          )),
                                     ),
                                     Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
                                       children: <Widget>[
                                         Padding(
-                                          padding: const EdgeInsets.all(8.0),
+                                          padding: const EdgeInsets.only(
+                                              left: 8.0, top: 4, bottom: 2),
                                           child: Text(
                                             snapshot.data[index].unidade,
                                             style: TextStyle(
@@ -305,17 +306,58 @@ class _HomeViewState extends State<HomeView> {
                                           ),
                                         ),
                                         Padding(
-                                          padding: const EdgeInsets.only(left: 8),
-                                          child: Text(
-                                            DateTime.parse(snapshot.data[index].data).toString().substring(8,10)+'/'+
-                                            DateTime.parse(snapshot.data[index].data).toString().substring(5,7)+'/'+
-                                            DateTime.parse(snapshot.data[index].data).toString().substring(0,4),
-                                            style: TextStyle(
-                                                color: colorMutedBlue,
-                                                fontWeight: FontWeight.w700,
-                                                fontFamily: "Roboto",
-                                                fontStyle: FontStyle.normal,
-                                                fontSize: 14.0),
+                                          padding:
+                                              const EdgeInsets.only(left: 8),
+                                          child: Row(
+                                            children: <Widget>[
+                                              Icon(Icons.calendar_today, size: 14, color: colorMutedBlue,),
+                                              Padding(
+                                                padding: const EdgeInsets.only(left: 4.0),
+                                                child: Text(
+                                                  DateTime.parse(snapshot
+                                                              .data[index].data)
+                                                          .toString()
+                                                          .substring(8, 10) +
+                                                      '/' +
+                                                      DateTime.parse(snapshot
+                                                              .data[index].data)
+                                                          .toString()
+                                                          .substring(5, 7) +
+                                                      '/' +
+                                                      DateTime.parse(snapshot
+                                                              .data[index].data)
+                                                          .toString()
+                                                          .substring(0, 4),
+                                                  style: TextStyle(
+                                                      color: colorMutedBlue,
+                                                      fontWeight: FontWeight.w700,
+                                                      fontFamily: "Roboto",
+                                                      fontStyle: FontStyle.normal,
+                                                      fontSize: 14.0),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding:
+                                              const EdgeInsets.only(left: 8, top: 4),
+                                          child: Row(
+                                            children: <Widget>[
+                                              Icon(Icons.timer, size: 14, color: colorMutedBlue,),
+                                              Padding(
+                                                padding: const EdgeInsets.only(left: 4.0),
+                                                child: Text(
+                                                  "15:00",
+                                                  style: TextStyle(
+                                                      color: colorMutedBlue,
+                                                      fontWeight: FontWeight.w700,
+                                                      fontFamily: "Roboto",
+                                                      fontStyle: FontStyle.normal,
+                                                      fontSize: 14.0),
+                                                ),
+                                              ),
+                                            ],
                                           ),
                                         )
                                       ],
@@ -343,25 +385,25 @@ class _HomeViewState extends State<HomeView> {
               icon: Icon(Icons.home,
                   color: _cIndex != 0
                       ? Color.fromARGB(255, 0, 0, 0)
-                      : Colors.blueAccent),
+                      : colorMutedBlue),
               title: new Text('Home')),
           BottomNavigationBarItem(
               icon: Icon(Icons.calendar_today,
                   color: _cIndex != 1
                       ? Color.fromARGB(255, 0, 0, 0)
-                      : Colors.blueAccent),
+                      : colorMutedBlue),
               title: new Text('')),
           BottomNavigationBarItem(
               icon: Icon(Icons.person_pin,
                   color: _cIndex != 2
                       ? Color.fromARGB(255, 0, 0, 0)
-                      : Colors.blueAccent),
+                      : colorMutedBlue),
               title: new Text('')),
           BottomNavigationBarItem(
               icon: Icon(Icons.search,
                   color: _cIndex != 3
                       ? Color.fromARGB(255, 0, 0, 0)
-                      : Colors.blueAccent),
+                      : colorMutedBlue),
               title: new Text(''))
         ],
         onTap: (index) {
