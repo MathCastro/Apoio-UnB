@@ -10,42 +10,21 @@ class InfoUnidadeView extends StatelessWidget {
     final double height = MediaQuery.of(context).size.height;
     final double width = MediaQuery.of(context).size.width;
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        title: Text(
+          "Pesquisa",
+          style: TextStyle(color: Colors.black),
+        ),
+      ),
       body: Container(
         height: height,
         child: Stack(
           alignment: Alignment.topCenter,
           children: <Widget>[
+            
             Padding(
-              padding: const EdgeInsets.only(top: 25.0),
-              child: Container(
-                color: Colors.white,
-                width: width,
-                height: 48.0,
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 35.0),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: <Widget>[
-                      Icon(Icons.arrow_back_ios),
-                      Padding(
-                        padding: const EdgeInsets.only(right: 20.0),
-                      ),
-                      Text(
-                        "Pesquisa",
-                        style: TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.w500,
-                            fontFamily: "Roboto",
-                            fontStyle: FontStyle.normal,
-                            fontSize: 20.0),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(top: 70.0, bottom: 0.0),
+              padding: const EdgeInsets.only(top: 0.0, bottom: 0.0),
               child: Container(
                 height: height - 48,
                 width: width,

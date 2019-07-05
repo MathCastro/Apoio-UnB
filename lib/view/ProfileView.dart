@@ -10,51 +10,35 @@ class ProfileView extends StatelessWidget {
     final double height = MediaQuery.of(context).size.height;
     final double width = MediaQuery.of(context).size.width;
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        title: Text(
+          "Perfil",
+          style: TextStyle(color: Colors.black),
+        ),
+      ),
       body: Container(
         height: height,
         child: Stack(
           alignment: Alignment.topCenter,
           children: <Widget>[
             Container(
-              height: height * 0.4,
+              height: height * 0.3,
               color: colorLightBlueGreyTwo,
               child: Align(
                   alignment: Alignment.bottomCenter,
                   child: Image.asset('assets/drawable-xhdpi/Flores-fundo.png')),
             ),
+            
             Padding(
-              padding: const EdgeInsets.only(top: 40.0, bottom: 40.0),
-              child: Container(
-                color:Colors.white,
-                width: width,
-                height: 48.0,
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 35.0),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: <Widget>[
-                    Text(
-                      "Perfil",
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.w500,
-                        fontFamily: "Roboto",
-                        fontStyle: FontStyle.normal,
-                        fontSize: 20.0),
-                    ),
-                  ],)
-                  ),
-                )
-            ),
-            Padding(
-              padding: const EdgeInsets.only(top: 140),
+              padding: const EdgeInsets.only(top: 100),
               child: Image.asset(
                 'assets/drawable-xhdpi/illustration-perfil.png',
                 width: width - 180,
               ),
             ),
             Positioned(
-              top: height * 0.7 - 91,
+              top: height * 0.6 - 91,
               child: Container(
                   width: width - 72,
                   height: height * 0.5,
@@ -164,7 +148,7 @@ class ProfileView extends StatelessWidget {
                           child:
                             FlatButton(
                               materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                              onPressed: (){},
+                              onPressed: (){Navigator.pushNamed(context, '/home');},
                               child: Image.asset(
                                 'assets/drawable-xhdpi/noun_home.png',
                                 width: 20,
@@ -216,7 +200,7 @@ class ProfileView extends StatelessWidget {
                             child:
                             FlatButton(
                               materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                              onPressed: (){},
+                              onPressed: (){Navigator.pushNamed(context, '/pesquisar_unidade');},
                               child: Image.asset(
                                 'assets/drawable-xhdpi/Icon - Search - Filled.png',
                                 width: 20,

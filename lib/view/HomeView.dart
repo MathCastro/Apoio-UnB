@@ -219,11 +219,16 @@ class _HomeViewState extends State<HomeView> {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
+                              GestureDetector(
+                              onTap: (){
+                                Navigator.pushNamed(context, '/pesquisar_unidade');
+                              },
+                              child:
                               Container(
                                 height: 55,
                                 child: Image.asset(
                                     'assets/drawable-xhdpi/009-map-1.png'),
-                              ),
+                              ),),
                               Padding(
                                 padding: const EdgeInsets.only(top: 16.0),
                                 child: Center(
@@ -386,7 +391,10 @@ class _HomeViewState extends State<HomeView> {
                   color: _cIndex != 0
                       ? Color.fromARGB(255, 0, 0, 0)
                       : colorMutedBlue),
-              title: new Text('Home')),
+              title: new Text('Home', style: 
+                            TextStyle(
+                              color: colorMutedBlue,
+                        ),)),
           BottomNavigationBarItem(
               icon: Icon(Icons.calendar_today,
                   color: _cIndex != 1
@@ -408,6 +416,12 @@ class _HomeViewState extends State<HomeView> {
         ],
         onTap: (index) {
           _incrementTab(index);
+          if(index == 2){
+            Navigator.pushNamed(context, '/perfil');
+          }
+          else if(index == 3){
+            Navigator.pushNamed(context, '/pesquisar_unidade');
+          }
         },
       ),
     );
