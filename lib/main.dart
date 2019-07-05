@@ -1,3 +1,4 @@
+import 'package:apoio_unb/res/Colors.dart';
 import 'package:apoio_unb/view/AgendarConsultaView.dart';
 import 'package:apoio_unb/view/ConsultaAgendadaComSucessoView.dart';
 import 'package:apoio_unb/view/NovaConsultaAreaAtuacaoView.dart';
@@ -37,7 +38,10 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,
+        brightness: Brightness.light,
+        primaryColor: colorAquamarine,
+        accentColor: colorMutedBlue,
+        splashColor: colorMutedBlue,
       ),
       initialRoute: '/',
       routes: {
