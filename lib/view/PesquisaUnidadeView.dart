@@ -4,7 +4,23 @@ import '../res/Colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 
-class PesquisaUnidadeView extends StatelessWidget {
+
+class PesquisaUnidadeView extends StatefulWidget {
+  @override
+  _PesquisaUnidadeState createState() => _PesquisaUnidadeState();
+}
+
+class _PesquisaUnidadeState extends State<PesquisaUnidadeView> {
+  int _cIndex = 3;
+
+  void _incrementTab(index) {
+    setState(
+      () {
+        _cIndex = index;
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final double height = MediaQuery.of(context).size.height;
@@ -121,6 +137,11 @@ class PesquisaUnidadeView extends StatelessWidget {
                                 child: Container(
                                     width: width * 0.8,
                                     height: height * 0.1,
+                                    decoration: const BoxDecoration(
+                                    border: Border(
+                                      left: BorderSide(width: 8.0, color: Color(0xff03dac6)),
+                                    ),
+                                  ),
                                     child: Row(
                                       children: <Widget>[
                                         /////////////////////////// FIX-ME /////////////////
@@ -129,9 +150,9 @@ class PesquisaUnidadeView extends StatelessWidget {
                                               CrossAxisAlignment.start,
                                           children: <Widget>[
                                             Container(
-                                              margin: EdgeInsets.all(8.0),
+                                              margin: EdgeInsets.only(right: 8.0),
                                               decoration: BoxDecoration(
-                                                color: Colors.black,
+                                                color: Colors.black
                                               ),
                                             ),
                                           ],
@@ -206,12 +227,162 @@ class PesquisaUnidadeView extends StatelessWidget {
                         ),
                       ],
                     ),
+
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: <Widget>[
+                        Padding(padding: const EdgeInsets.only(bottom: 0.0)),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: <Widget>[
+                            Padding(
+                                padding: const EdgeInsets.only(
+                                    top: 20.0, left: 40.0, bottom: 30.0)),
+                            Card(
+                              child: InkWell(
+                                splashColor: Colors.blue.withAlpha(30),
+                                onTap: () {},
+                                child: Container(
+                                    width: width * 0.8,
+                                    height: height * 0.1,
+                                    decoration: const BoxDecoration(
+                                    border: Border(
+                                      left: BorderSide(width: 8.0, color: Color(0xff03dac6)),
+                                    ),
+                                  ),
+                                    child: Row(
+                                      children: <Widget>[
+                                        /////////////////////////// FIX-ME /////////////////
+                                        Column(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(
+                                              margin: EdgeInsets.only(right: 8.0),
+                                              decoration: BoxDecoration(
+                                                color: Colors.black
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                        /////////////////////////// FIX-ME /////////////////
+                                        Column(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: <Widget>[
+                                              Row(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.start,
+                                                children: <Widget>[
+                                                  Text(
+                                                    "HUB\n",
+                                                    style: const TextStyle(
+                                                        color:
+                                                            Color(0xff33849b),
+                                                        fontWeight:
+                                                            FontWeight.w700,
+                                                        fontFamily: "Roboto",
+                                                        fontStyle:
+                                                            FontStyle.normal,
+                                                        fontSize: 12.0),
+                                                  ),
+                                                ],
+                                              ),
+                                              Row(
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment.start,
+                                                  children: <Widget>[
+                                                    Text(
+                                                        "Lorem ipsum dolor sit amet, consectetur\nadipiscing elit.",
+                                                        style: const TextStyle(
+                                                            color: Color(
+                                                                0xff33849b),
+                                                            fontWeight:
+                                                                FontWeight.w400,
+                                                            fontFamily:
+                                                                "Roboto",
+                                                            fontStyle: FontStyle
+                                                                .normal,
+                                                            fontSize: 12.0)),
+                                                  ]),
+                                            ]),
+                                        Column(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.center,
+                                            children: <Widget>[
+                                              Padding(
+                                                  padding:
+                                                      const EdgeInsets.only(
+                                                          top: 20.0)),
+                                              Row(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
+                                                children: <Widget>[
+                                                  Padding(
+                                                      padding:
+                                                          const EdgeInsets.only(
+                                                              left: 15.0)),
+                                                  Icon(
+                                                      Icons.add_circle_outline),
+                                                ],
+                                              )
+                                            ]),
+                                      ],
+                                    )),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               ),
             )
           ],
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _cIndex,
+        type: BottomNavigationBarType.shifting,
+        items: [
+          BottomNavigationBarItem(
+              icon: Icon(Icons.home,
+                  color: _cIndex != 0
+                      ? Color.fromARGB(255, 0, 0, 0)
+                      : colorMutedBlue),
+              title: new Text('')),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.calendar_today,
+                  color: _cIndex != 1
+                      ? Color.fromARGB(255, 0, 0, 0)
+                      : colorMutedBlue),
+              title: new Text('')),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.person_pin,
+                  color: _cIndex != 2
+                      ? Color.fromARGB(255, 0, 0, 0)
+                      : colorMutedBlue),
+              title: new Text('')),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.search,
+                  color: _cIndex != 3
+                      ? Color.fromARGB(255, 0, 0, 0)
+                      : colorMutedBlue),
+              title: new Text('Unidades', style: 
+                            TextStyle(
+                              color: colorMutedBlue,
+                        ),)),
+        ],
+        onTap: (index) {
+          _incrementTab(index);
+          if(index == 0){
+            Navigator.pushNamed(context, '/home');
+          }
+          else if(index == 2){
+            Navigator.pushNamed(context, '/perfil');
+          }
+        },
       ),
     );
   }
