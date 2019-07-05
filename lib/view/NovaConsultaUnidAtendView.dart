@@ -21,6 +21,10 @@ class _NovaConsultaUnidAtendViewState extends State<NovaConsultaUnidAtendView> {
     final double width = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
+        leading: new IconButton(
+            icon: new Icon(Icons.arrow_back, color: Colors.black),
+            onPressed: () => Navigator.of(context).pop(),
+          ),
         backgroundColor: Colors.white,
         title: Text(
           "Nova Consulta",

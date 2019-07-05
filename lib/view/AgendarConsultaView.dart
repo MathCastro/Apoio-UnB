@@ -32,6 +32,10 @@ class _AngendarConsultaViewState extends State<AngendarConsultaView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: new IconButton(
+            icon: new Icon(Icons.arrow_back, color: Colors.black),
+            onPressed: () => Navigator.of(context).pop(),
+          ),
         backgroundColor: Colors.white,
         title: Text(
           "Agendar Consulta",
