@@ -290,6 +290,7 @@ class _HomeViewState extends State<HomeView> {
                                       ),
                                     ),
                                     Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
                                       children: <Widget>[
                                         Padding(
                                           padding: const EdgeInsets.all(8.0),
@@ -303,6 +304,18 @@ class _HomeViewState extends State<HomeView> {
                                                 fontSize: 14.0),
                                           ),
                                         ),
+                                        Padding(
+                                          padding: const EdgeInsets.only(left: 8),
+                                          child: Text(
+                                            DateTime.parse(snapshot.data[index].data).toString(),
+                                            style: TextStyle(
+                                                color: colorMutedBlue,
+                                                fontWeight: FontWeight.w700,
+                                                fontFamily: "Roboto",
+                                                fontStyle: FontStyle.normal,
+                                                fontSize: 14.0),
+                                          ),
+                                        )
                                       ],
                                     ),
                                   ],
