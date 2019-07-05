@@ -58,6 +58,7 @@ class _HomeViewState extends State<HomeView> {
                         shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10.0),
                       ),
+                        elevation: 6,
                         child: Center(
                           child: Container(
                             height: height / 3.5,
@@ -110,6 +111,7 @@ class _HomeViewState extends State<HomeView> {
                         shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10.0),
                       ),
+                        elevation: 6,
                         child: Center(
                           child: Container(
                             height: height / 3.5,
@@ -162,6 +164,7 @@ class _HomeViewState extends State<HomeView> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10.0),
                       ),
+                      elevation: 6,
                       child: Center(
                         child: Container(
                           height: height / 3.5,
@@ -208,6 +211,7 @@ class _HomeViewState extends State<HomeView> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10.0),
                       ),
+                      elevation: 6,
                       child: Center(
                         child: Container(
                           height: height / 3.5,
