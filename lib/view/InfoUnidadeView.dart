@@ -28,7 +28,8 @@ class InfoUnidadeView extends StatelessWidget {
                     children: <Widget>[
                       Icon(Icons.arrow_back_ios),
                       Padding(
-                        padding: const EdgeInsets.only(right: 20.0),),
+                        padding: const EdgeInsets.only(right: 20.0),
+                      ),
                       Text(
                         "Pesquisa",
                         style: TextStyle(
@@ -77,53 +78,53 @@ class InfoUnidadeView extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: <Widget>[
                         Padding(
-                          padding: const EdgeInsets.only(left: 40.0, bottom:20.0)),
+                            padding: const EdgeInsets.only(
+                                left: 40.0, bottom: 20.0)),
                         Text(
                           "Nepasd",
                           style: const TextStyle(
-                          color:  const Color(0xff3b4d57),
-                          fontWeight: FontWeight.w500,
-                          fontFamily: "Roboto",
-                          fontStyle:  FontStyle.normal,
-                          fontSize: 20.0
-                        )),
+                              color: const Color(0xff3b4d57),
+                              fontWeight: FontWeight.w500,
+                              fontFamily: "Roboto",
+                              fontStyle: FontStyle.normal,
+                              fontSize: 20.0),
+                        ),
                       ],
                     ),
-                    
                     Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: <Widget>[
                         Padding(
-                          padding: const EdgeInsets.only(left: 40.0, bottom:0.0)),
+                            padding:
+                                const EdgeInsets.only(left: 40.0, bottom: 0.0)),
                         Text(
                           "(Núcleo de Estudos, Pesquisas e Atendimentos\n em Saúde Mental e Drogas)",
                           style: const TextStyle(
-                          color:  const Color(0xff3b4d57),
-                          fontWeight: FontWeight.w400,
-                          fontFamily: "Roboto",
-                          fontStyle:  FontStyle.normal,
-                          fontSize: 12.0
-                        ))
+                              color: const Color(0xff3b4d57),
+                              fontWeight: FontWeight.w400,
+                              fontFamily: "Roboto",
+                              fontStyle: FontStyle.normal,
+                              fontSize: 12.0),
+                        ),
                       ],
                     ),
-                    
                     Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: <Widget>[
                         Padding(
-                          padding: const EdgeInsets.only(left: 40.0, top:100.0)),
+                            padding:
+                                const EdgeInsets.only(left: 40.0, top: 100.0)),
                         Text(
                           "Acolhimento, atendimento psicológico, \ngrupos de escuta, rodas de conversa e\n orientações. No momento, as atividades \nestão sendo realizadas somente em casos \nemergenciais, com agendamento prévio.",
                           style: const TextStyle(
-                          color:  const Color(0xff3b4d57),
-                          fontWeight: FontWeight.w400,
-                          fontFamily: "Roboto",
-                          fontStyle:  FontStyle.normal,
-                          fontSize: 14.0
-                        ))
+                              color: const Color(0xff3b4d57),
+                              fontWeight: FontWeight.w400,
+                              fontFamily: "Roboto",
+                              fontStyle: FontStyle.normal,
+                              fontSize: 14.0),
+                        ),
                       ],
                     ),
-
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
@@ -133,20 +134,22 @@ class InfoUnidadeView extends StatelessWidget {
                             alignment: Alignment.bottomCenter,
                             child: ButtonTheme(
                               minWidth: 200.0,
-                              child: RaisedButton(
+                              child: OutlineButton(
+                                borderSide: BorderSide(
+                                  color: colorMutedBlue, //Color of the border
+                                  style:
+                                      BorderStyle.solid, //Style of the border
+                                  width: 0.8, //width of the border
+                                ),
                                 color: Colors.white,
-                                onPressed: () {},
-                                shape: Border.all(width: 1.0, color: Color(0xff33849b)),
+                                onPressed: () {
+                                  // Navigator.pushNamed(context, '/registrar');
+                                },
                                 child: Center(
                                   child: Text(
                                     "Informações",
-                                    style: const TextStyle(
-                                    color: Color(0xff33849b),
-                                    fontWeight: FontWeight.w500,
-                                    fontFamily: "Roboto",
-                                    fontStyle:  FontStyle.normal,
-                                    fontSize: 14.0
-                                  )),
+                                    style: TextStyle(color: colorMutedBlue),
+                                  ),
                                 ),
                               ),
                             ),
@@ -154,7 +157,6 @@ class InfoUnidadeView extends StatelessWidget {
                         )
                       ],
                     ),
-                    
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
@@ -164,20 +166,22 @@ class InfoUnidadeView extends StatelessWidget {
                             alignment: Alignment.bottomCenter,
                             child: ButtonTheme(
                               minWidth: 200.0,
-                              child: RaisedButton(
+                              child: OutlineButton(
+                                borderSide: BorderSide(
+                                  color: colorMutedBlue, //Color of the border
+                                  style:
+                                      BorderStyle.solid, //Style of the border
+                                  width: 0.8, //width of the border
+                                ),
                                 color: Colors.white,
-                                onPressed: () {},
-                                shape: Border.all(width: 1.0, color: Color(0xff33849b)),
+                                onPressed: () {
+                                  // Navigator.pushNamed(context, '/registrar');
+                                },
                                 child: Center(
                                   child: Text(
                                     "Ver no mapa",
-                                    style: const TextStyle(
-                                    color: Color(0xff33849b),
-                                    fontWeight: FontWeight.w500,
-                                    fontFamily: "Roboto",
-                                    fontStyle:  FontStyle.normal,
-                                    fontSize: 14.0
-                                  )),
+                                    style: TextStyle(color: colorMutedBlue),
+                                  ),
                                 ),
                               ),
                             ),
@@ -185,7 +189,6 @@ class InfoUnidadeView extends StatelessWidget {
                         )
                       ],
                     ),
-
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
@@ -197,7 +200,9 @@ class InfoUnidadeView extends StatelessWidget {
                               minWidth: 200.0,
                               child: RaisedButton(
                                 color: colorMutedBlue,
-                                onPressed: () {},
+                                onPressed: () {
+                                  // Navigator.pushNamed(context, '/login');
+                                },
                                 child: Center(
                                   child: Text(
                                     "Horários de atendimento",
