@@ -238,6 +238,7 @@ class _HomeViewState extends State<HomeView> {
                       child: ListView.builder(
                         // scrollDirection: Axis.vertical,
                         shrinkWrap: true,
+                        physics: NeverScrollableScrollPhysics(),
                         itemCount: snapshot.data.length,
                         itemBuilder: (BuildContext ctxt, int index) {
                           return Center(
