@@ -3,7 +3,7 @@ import 'package:apoio_unb/model/User.dart';
 import 'package:apoio_unb/res/Colors.dart';
 import 'package:flutter/material.dart';
 
-class Pesquisa2View extends StatelessWidget {
+class Pesquisa3View extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final double height = MediaQuery.of(context).size.height;
@@ -88,7 +88,7 @@ class SliderFormState extends State<SliderForm> {
                     left: 20,
                     right: 20,
                   ),
-                  child: Text("1.",
+                  child: Text("6.",
                       textAlign: TextAlign.left,
                       style: const TextStyle(
                           color: const Color(0xff3b4d57),
@@ -102,7 +102,7 @@ class SliderFormState extends State<SliderForm> {
                   left: 20,
                 ),
                 child: Text(
-                    "Nas últimas duas semanas, quantas vezes você sentiu incomodo por se sentir deprimido, irritado ou sem esperança?",
+                    "Nas últimas duas semanas, quantas vezes você se incomodou por se sentir mal consigo mesmo - ou por sentir que você é um fracasso, para você ou sua família?",
                     textAlign: TextAlign.left,
                     style: const TextStyle(
                         color: const Color(0x99000000),
@@ -161,7 +161,7 @@ class SliderFormState extends State<SliderForm> {
                     left: 20,
                     right: 20,
                   ),
-                  child: Text("2.",
+                  child: Text("7.",
                       textAlign: TextAlign.left,
                       style: const TextStyle(
                           color: const Color(0xff3b4d57),
@@ -234,7 +234,7 @@ class SliderFormState extends State<SliderForm> {
                     left: 20,
                     right: 20,
                   ),
-                  child: Text("3.",
+                  child: Text("8.",
                       textAlign: TextAlign.left,
                       style: const TextStyle(
                           color: const Color(0xff3b4d57),
@@ -307,7 +307,7 @@ class SliderFormState extends State<SliderForm> {
                     left: 20,
                     right: 20,
                   ),
-                  child: Text("4.",
+                  child: Text("9.",
                       textAlign: TextAlign.left,
                       style: const TextStyle(
                           color: const Color(0xff3b4d57),
@@ -380,7 +380,7 @@ class SliderFormState extends State<SliderForm> {
                     left: 20,
                     right: 20,
                   ),
-                  child: Text("5.",
+                  child: Text("10.",
                       textAlign: TextAlign.left,
                       style: const TextStyle(
                           color: const Color(0xff3b4d57),
@@ -465,7 +465,7 @@ class SliderFormState extends State<SliderForm> {
                           SnackBar(content: Text('Processing Data')));
 
                       AuthController().registerUser(_user);
-                      Navigator.pushNamed(context, '/pesquisa3');
+                      Navigator.pushNamed(context, '/pesquisa4');
 
                       print('Printing the login data.');
                       print('User: ${_user.toString()}');

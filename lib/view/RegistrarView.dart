@@ -257,7 +257,7 @@ class MyCustomFormState extends State<MyCustomForm> {
           ),
           Padding(
             padding:
-                const EdgeInsets.only(top: 8, left: 20, right: 20, bottom: 4),
+            const EdgeInsets.only(top: 8, left: 20, right: 20, bottom: 4),
             child: Container(
               height: 35,
               child: TextFormField(

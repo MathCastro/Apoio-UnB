@@ -66,6 +66,7 @@ flutter:
     - assets/drawable-xhdpi/illustration-consulta-agendada-com-sucesso.png
     - assets/drawable-xhdpi/imagem-info-atendimento.png
     - assets/drawable-xhdpi/illustration-novo-formulario.png
+    - assets/drawable-xhdpi/illustration-obrigado-por-responder-oquestionario.png
     
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
