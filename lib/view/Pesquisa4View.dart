@@ -21,10 +21,11 @@ class Pesquisa4View extends StatelessWidget {
             style: TextStyle(color: Colors.black),
           ),
         ),
+        backgroundColor: colorLightBlueGreyTwo,
         body: SingleChildScrollView(
           child: Center(
             child: Padding(
-              padding: const EdgeInsets.only(top: 30),
+              padding: const EdgeInsets.only(top: 16, bottom: 16),
               child: Card(
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10),
@@ -120,75 +121,73 @@ class SliderFormState extends State<SliderForm> {
                   top: 5,
                 ),
                 child: Card(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10.0),
-                  ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10.0),
+                    ),
                     elevation: 3,
                     child: Column(
                       children: <Widget>[
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 12.0),
                           child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: <Widget>[
-                              Text(
-                                      "0",
-                                      style: const TextStyle(
-                                          color: const Color(0xffced4d9),
-                                          fontWeight: FontWeight.w700,
-                                          fontFamily: "Roboto",
-                                          fontStyle: FontStyle.normal,
-                                          fontSize: 12.0),
-                                    ),
-                                    Text(
-                                      "1",
-                                      style: const TextStyle(
-                                          color: const Color(0xffced4d9),
-                                          fontWeight: FontWeight.w700,
-                                          fontFamily: "Roboto",
-                                          fontStyle: FontStyle.normal,
-                                          fontSize: 12.0),
-                                    ),
-                                    Text(
-                                      "2",
-                                      style: const TextStyle(
-                                          color: const Color(0xffced4d9),
-                                          fontWeight: FontWeight.w700,
-                                          fontFamily: "Roboto",
-                                          fontStyle: FontStyle.normal,
-                                          fontSize: 12.0),
-                                    ),
-                                    Text(
-                                      "3",
-                                      style: const TextStyle(
-                                          color: const Color(0xffced4d9),
-                                          fontWeight: FontWeight.w700,
-                                          fontFamily: "Roboto",
-                                          fontStyle: FontStyle.normal,
-                                          fontSize: 12.0),
-                                    ),
-                                    Text(
-                                      "4",
-                                      style: const TextStyle(
-                                          color: const Color(0xffced4d9),
-                                          fontWeight: FontWeight.w700,
-                                          fontFamily: "Roboto",
-                                          fontStyle: FontStyle.normal,
-                                          fontSize: 12.0),
-                                    ),
-                              Text(
-                                      "Todos os dias",
-                                      style: const TextStyle(
-                                          color: const Color(0xffced4d9),
-                                          fontWeight: FontWeight.w700,
-                                          fontFamily: "Roboto",
-                                          fontStyle: FontStyle.normal,
-                                          fontSize: 12.0),
-                                    )
-                                  
+                                Text(
+                                  "0",
+                                  style: const TextStyle(
+                                      color: const Color(0xffced4d9),
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Roboto",
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 12.0),
+                                ),
+                                Text(
+                                  "1",
+                                  style: const TextStyle(
+                                      color: const Color(0xffced4d9),
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Roboto",
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 12.0),
+                                ),
+                                Text(
+                                  "2",
+                                  style: const TextStyle(
+                                      color: const Color(0xffced4d9),
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Roboto",
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 12.0),
+                                ),
+                                Text(
+                                  "3",
+                                  style: const TextStyle(
+                                      color: const Color(0xffced4d9),
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Roboto",
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 12.0),
+                                ),
+                                Text(
+                                  "4",
+                                  style: const TextStyle(
+                                      color: const Color(0xffced4d9),
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Roboto",
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 12.0),
+                                ),
+                                Text(
+                                  "Todos os dias",
+                                  style: const TextStyle(
+                                      color: const Color(0xffced4d9),
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Roboto",
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 12.0),
+                                )
                               ]),
-                          ),
+                        ),
                         Slider(
                           min: 0,
                           max: 7,
@@ -240,75 +239,73 @@ class SliderFormState extends State<SliderForm> {
                   top: 5,
                 ),
                 child: Card(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10.0),
-                  ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10.0),
+                    ),
                     elevation: 3,
                     child: Column(
                       children: <Widget>[
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 12.0),
                           child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: <Widget>[
-                              Text(
-                                      "0",
-                                      style: const TextStyle(
-                                          color: const Color(0xffced4d9),
-                                          fontWeight: FontWeight.w700,
-                                          fontFamily: "Roboto",
-                                          fontStyle: FontStyle.normal,
-                                          fontSize: 12.0),
-                                    ),
-                                    Text(
-                                      "1",
-                                      style: const TextStyle(
-                                          color: const Color(0xffced4d9),
-                                          fontWeight: FontWeight.w700,
-                                          fontFamily: "Roboto",
-                                          fontStyle: FontStyle.normal,
-                                          fontSize: 12.0),
-                                    ),
-                                    Text(
-                                      "2",
-                                      style: const TextStyle(
-                                          color: const Color(0xffced4d9),
-                                          fontWeight: FontWeight.w700,
-                                          fontFamily: "Roboto",
-                                          fontStyle: FontStyle.normal,
-                                          fontSize: 12.0),
-                                    ),
-                                    Text(
-                                      "3",
-                                      style: const TextStyle(
-                                          color: const Color(0xffced4d9),
-                                          fontWeight: FontWeight.w700,
-                                          fontFamily: "Roboto",
-                                          fontStyle: FontStyle.normal,
-                                          fontSize: 12.0),
-                                    ),
-                                    Text(
-                                      "4",
-                                      style: const TextStyle(
-                                          color: const Color(0xffced4d9),
-                                          fontWeight: FontWeight.w700,
-                                          fontFamily: "Roboto",
-                                          fontStyle: FontStyle.normal,
-                                          fontSize: 12.0),
-                                    ),
-                              Text(
-                                      "Todos os dias",
-                                      style: const TextStyle(
-                                          color: const Color(0xffced4d9),
-                                          fontWeight: FontWeight.w700,
-                                          fontFamily: "Roboto",
-                                          fontStyle: FontStyle.normal,
-                                          fontSize: 12.0),
-                                    )
-                                  
+                                Text(
+                                  "0",
+                                  style: const TextStyle(
+                                      color: const Color(0xffced4d9),
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Roboto",
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 12.0),
+                                ),
+                                Text(
+                                  "1",
+                                  style: const TextStyle(
+                                      color: const Color(0xffced4d9),
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Roboto",
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 12.0),
+                                ),
+                                Text(
+                                  "2",
+                                  style: const TextStyle(
+                                      color: const Color(0xffced4d9),
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Roboto",
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 12.0),
+                                ),
+                                Text(
+                                  "3",
+                                  style: const TextStyle(
+                                      color: const Color(0xffced4d9),
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Roboto",
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 12.0),
+                                ),
+                                Text(
+                                  "4",
+                                  style: const TextStyle(
+                                      color: const Color(0xffced4d9),
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Roboto",
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 12.0),
+                                ),
+                                Text(
+                                  "Todos os dias",
+                                  style: const TextStyle(
+                                      color: const Color(0xffced4d9),
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Roboto",
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 12.0),
+                                )
                               ]),
-                          ),
+                        ),
                         Slider(
                           min: 0,
                           max: 7,
@@ -360,75 +357,73 @@ class SliderFormState extends State<SliderForm> {
                   top: 5,
                 ),
                 child: Card(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10.0),
-                  ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10.0),
+                    ),
                     elevation: 3,
                     child: Column(
                       children: <Widget>[
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 12.0),
                           child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: <Widget>[
-                              Text(
-                                      "0",
-                                      style: const TextStyle(
-                                          color: const Color(0xffced4d9),
-                                          fontWeight: FontWeight.w700,
-                                          fontFamily: "Roboto",
-                                          fontStyle: FontStyle.normal,
-                                          fontSize: 12.0),
-                                    ),
-                                    Text(
-                                      "1",
-                                      style: const TextStyle(
-                                          color: const Color(0xffced4d9),
-                                          fontWeight: FontWeight.w700,
-                                          fontFamily: "Roboto",
-                                          fontStyle: FontStyle.normal,
-                                          fontSize: 12.0),
-                                    ),
-                                    Text(
-                                      "2",
-                                      style: const TextStyle(
-                                          color: const Color(0xffced4d9),
-                                          fontWeight: FontWeight.w700,
-                                          fontFamily: "Roboto",
-                                          fontStyle: FontStyle.normal,
-                                          fontSize: 12.0),
-                                    ),
-                                    Text(
-                                      "3",
-                                      style: const TextStyle(
-                                          color: const Color(0xffced4d9),
-                                          fontWeight: FontWeight.w700,
-                                          fontFamily: "Roboto",
-                                          fontStyle: FontStyle.normal,
-                                          fontSize: 12.0),
-                                    ),
-                                    Text(
-                                      "4",
-                                      style: const TextStyle(
-                                          color: const Color(0xffced4d9),
-                                          fontWeight: FontWeight.w700,
-                                          fontFamily: "Roboto",
-                                          fontStyle: FontStyle.normal,
-                                          fontSize: 12.0),
-                                    ),
-                              Text(
-                                      "Todos os dias",
-                                      style: const TextStyle(
-                                          color: const Color(0xffced4d9),
-                                          fontWeight: FontWeight.w700,
-                                          fontFamily: "Roboto",
-                                          fontStyle: FontStyle.normal,
-                                          fontSize: 12.0),
-                                    )
-                                  
+                                Text(
+                                  "0",
+                                  style: const TextStyle(
+                                      color: const Color(0xffced4d9),
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Roboto",
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 12.0),
+                                ),
+                                Text(
+                                  "1",
+                                  style: const TextStyle(
+                                      color: const Color(0xffced4d9),
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Roboto",
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 12.0),
+                                ),
+                                Text(
+                                  "2",
+                                  style: const TextStyle(
+                                      color: const Color(0xffced4d9),
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Roboto",
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 12.0),
+                                ),
+                                Text(
+                                  "3",
+                                  style: const TextStyle(
+                                      color: const Color(0xffced4d9),
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Roboto",
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 12.0),
+                                ),
+                                Text(
+                                  "4",
+                                  style: const TextStyle(
+                                      color: const Color(0xffced4d9),
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Roboto",
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 12.0),
+                                ),
+                                Text(
+                                  "Todos os dias",
+                                  style: const TextStyle(
+                                      color: const Color(0xffced4d9),
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Roboto",
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 12.0),
+                                )
                               ]),
-                          ),
+                        ),
                         Slider(
                           min: 0,
                           max: 7,
@@ -480,75 +475,73 @@ class SliderFormState extends State<SliderForm> {
                   top: 5,
                 ),
                 child: Card(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10.0),
-                  ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10.0),
+                    ),
                     elevation: 3,
                     child: Column(
                       children: <Widget>[
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 12.0),
                           child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: <Widget>[
-                              Text(
-                                      "0",
-                                      style: const TextStyle(
-                                          color: const Color(0xffced4d9),
-                                          fontWeight: FontWeight.w700,
-                                          fontFamily: "Roboto",
-                                          fontStyle: FontStyle.normal,
-                                          fontSize: 12.0),
-                                    ),
-                                    Text(
-                                      "1",
-                                      style: const TextStyle(
-                                          color: const Color(0xffced4d9),
-                                          fontWeight: FontWeight.w700,
-                                          fontFamily: "Roboto",
-                                          fontStyle: FontStyle.normal,
-                                          fontSize: 12.0),
-                                    ),
-                                    Text(
-                                      "2",
-                                      style: const TextStyle(
-                                          color: const Color(0xffced4d9),
-                                          fontWeight: FontWeight.w700,
-                                          fontFamily: "Roboto",
-                                          fontStyle: FontStyle.normal,
-                                          fontSize: 12.0),
-                                    ),
-                                    Text(
-                                      "3",
-                                      style: const TextStyle(
-                                          color: const Color(0xffced4d9),
-                                          fontWeight: FontWeight.w700,
-                                          fontFamily: "Roboto",
-                                          fontStyle: FontStyle.normal,
-                                          fontSize: 12.0),
-                                    ),
-                                    Text(
-                                      "4",
-                                      style: const TextStyle(
-                                          color: const Color(0xffced4d9),
-                                          fontWeight: FontWeight.w700,
-                                          fontFamily: "Roboto",
-                                          fontStyle: FontStyle.normal,
-                                          fontSize: 12.0),
-                                    ),
-                              Text(
-                                      "Todos os dias",
-                                      style: const TextStyle(
-                                          color: const Color(0xffced4d9),
-                                          fontWeight: FontWeight.w700,
-                                          fontFamily: "Roboto",
-                                          fontStyle: FontStyle.normal,
-                                          fontSize: 12.0),
-                                    )
-                                  
+                                Text(
+                                  "0",
+                                  style: const TextStyle(
+                                      color: const Color(0xffced4d9),
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Roboto",
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 12.0),
+                                ),
+                                Text(
+                                  "1",
+                                  style: const TextStyle(
+                                      color: const Color(0xffced4d9),
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Roboto",
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 12.0),
+                                ),
+                                Text(
+                                  "2",
+                                  style: const TextStyle(
+                                      color: const Color(0xffced4d9),
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Roboto",
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 12.0),
+                                ),
+                                Text(
+                                  "3",
+                                  style: const TextStyle(
+                                      color: const Color(0xffced4d9),
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Roboto",
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 12.0),
+                                ),
+                                Text(
+                                  "4",
+                                  style: const TextStyle(
+                                      color: const Color(0xffced4d9),
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Roboto",
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 12.0),
+                                ),
+                                Text(
+                                  "Todos os dias",
+                                  style: const TextStyle(
+                                      color: const Color(0xffced4d9),
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Roboto",
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 12.0),
+                                )
                               ]),
-                          ),
+                        ),
                         Slider(
                           min: 0,
                           max: 7,
@@ -600,75 +593,73 @@ class SliderFormState extends State<SliderForm> {
                   top: 5,
                 ),
                 child: Card(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10.0),
-                  ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10.0),
+                    ),
                     elevation: 3,
                     child: Column(
                       children: <Widget>[
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 12.0),
                           child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: <Widget>[
-                              Text(
-                                      "0",
-                                      style: const TextStyle(
-                                          color: const Color(0xffced4d9),
-                                          fontWeight: FontWeight.w700,
-                                          fontFamily: "Roboto",
-                                          fontStyle: FontStyle.normal,
-                                          fontSize: 12.0),
-                                    ),
-                                    Text(
-                                      "1",
-                                      style: const TextStyle(
-                                          color: const Color(0xffced4d9),
-                                          fontWeight: FontWeight.w700,
-                                          fontFamily: "Roboto",
-                                          fontStyle: FontStyle.normal,
-                                          fontSize: 12.0),
-                                    ),
-                                    Text(
-                                      "2",
-                                      style: const TextStyle(
-                                          color: const Color(0xffced4d9),
-                                          fontWeight: FontWeight.w700,
-                                          fontFamily: "Roboto",
-                                          fontStyle: FontStyle.normal,
-                                          fontSize: 12.0),
-                                    ),
-                                    Text(
-                                      "3",
-                                      style: const TextStyle(
-                                          color: const Color(0xffced4d9),
-                                          fontWeight: FontWeight.w700,
-                                          fontFamily: "Roboto",
-                                          fontStyle: FontStyle.normal,
-                                          fontSize: 12.0),
-                                    ),
-                                    Text(
-                                      "4",
-                                      style: const TextStyle(
-                                          color: const Color(0xffced4d9),
-                                          fontWeight: FontWeight.w700,
-                                          fontFamily: "Roboto",
-                                          fontStyle: FontStyle.normal,
-                                          fontSize: 12.0),
-                                    ),
-                              Text(
-                                      "Todos os dias",
-                                      style: const TextStyle(
-                                          color: const Color(0xffced4d9),
-                                          fontWeight: FontWeight.w700,
-                                          fontFamily: "Roboto",
-                                          fontStyle: FontStyle.normal,
-                                          fontSize: 12.0),
-                                    )
-                                  
+                                Text(
+                                  "0",
+                                  style: const TextStyle(
+                                      color: const Color(0xffced4d9),
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Roboto",
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 12.0),
+                                ),
+                                Text(
+                                  "1",
+                                  style: const TextStyle(
+                                      color: const Color(0xffced4d9),
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Roboto",
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 12.0),
+                                ),
+                                Text(
+                                  "2",
+                                  style: const TextStyle(
+                                      color: const Color(0xffced4d9),
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Roboto",
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 12.0),
+                                ),
+                                Text(
+                                  "3",
+                                  style: const TextStyle(
+                                      color: const Color(0xffced4d9),
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Roboto",
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 12.0),
+                                ),
+                                Text(
+                                  "4",
+                                  style: const TextStyle(
+                                      color: const Color(0xffced4d9),
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Roboto",
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 12.0),
+                                ),
+                                Text(
+                                  "Todos os dias",
+                                  style: const TextStyle(
+                                      color: const Color(0xffced4d9),
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Roboto",
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 12.0),
+                                )
                               ]),
-                          ),
+                        ),
                         Slider(
                           min: 0,
                           max: 7,

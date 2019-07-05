@@ -20,10 +20,11 @@ class Pesquisa2View extends StatelessWidget {
             style: TextStyle(color: Colors.black),
           ),
         ),
+        backgroundColor: colorLightBlueGreyTwo,
         body: SingleChildScrollView(
           child: Center(
             child: Padding(
-              padding: const EdgeInsets.only(top: 30),
+              padding: const EdgeInsets.only(top: 16, bottom: 16),
               child: Card(
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10),
