@@ -55,10 +55,13 @@ class _HomeViewState extends State<HomeView> {
                         Navigator.pushNamed(context, '/pesquisa1');
                       },
                       child: Card(
+                        shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
                         child: Center(
                           child: Container(
-                            height: 150,
-                            width: 110,
+                            height: height / 3.5,
+                            width: width / 2.6,
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: <Widget>[
@@ -67,15 +70,18 @@ class _HomeViewState extends State<HomeView> {
                                   child: Image.asset(
                                       'assets/drawable-xhdpi/notepad.png'),
                                 ),
-                                Center(
-                                  child: Text(
-                                    "Novo",
-                                    style: const TextStyle(
-                                        color: const Color(0xff3b4d57),
-                                        fontWeight: FontWeight.w700,
-                                        fontFamily: "Roboto",
-                                        fontStyle: FontStyle.normal,
-                                        fontSize: 14.0),
+                                Padding(
+                                  padding: const EdgeInsets.only(top:16.0),
+                                  child: Center(
+                                    child: Text(
+                                      "Novo",
+                                      style: const TextStyle(
+                                          color: const Color(0xff3b4d57),
+                                          fontWeight: FontWeight.w700,
+                                          fontFamily: "Roboto",
+                                          fontStyle: FontStyle.normal,
+                                          fontSize: 14.0),
+                                    ),
                                   ),
                                 ),
                                 Center(
@@ -101,10 +107,13 @@ class _HomeViewState extends State<HomeView> {
                             context, '/nova_consulta_unid_atend');
                       },
                       child: Card(
+                        shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
                         child: Center(
                           child: Container(
-                            height: 150,
-                            width: 110,
+                            height: height / 3.5,
+                            width: width / 2.6,
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: <Widget>[
@@ -113,15 +122,18 @@ class _HomeViewState extends State<HomeView> {
                                   child: Image.asset(
                                       'assets/drawable-xhdpi/010-calendar-2.png'),
                                 ),
-                                Center(
-                                  child: Text(
-                                    "Nova",
-                                    style: const TextStyle(
-                                        color: const Color(0xff3b4d57),
-                                        fontWeight: FontWeight.w700,
-                                        fontFamily: "Roboto",
-                                        fontStyle: FontStyle.normal,
-                                        fontSize: 14.0),
+                                Padding(
+                                  padding: const EdgeInsets.only(top:16.0),
+                                  child: Center(
+                                    child: Text(
+                                      "Nova",
+                                      style: const TextStyle(
+                                          color: const Color(0xff3b4d57),
+                                          fontWeight: FontWeight.w700,
+                                          fontFamily: "Roboto",
+                                          fontStyle: FontStyle.normal,
+                                          fontSize: 14.0),
+                                    ),
                                   ),
                                 ),
                                 Center(
@@ -147,10 +159,13 @@ class _HomeViewState extends State<HomeView> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
                       child: Center(
                         child: Container(
-                          height: 150,
-                          width: 110,
+                          height: height / 3.5,
+                          width: width / 2.6,
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
@@ -159,15 +174,18 @@ class _HomeViewState extends State<HomeView> {
                                 child: Image.asset(
                                     'assets/drawable-xhdpi/calendar.png'),
                               ),
-                              Center(
-                                child: Text(
-                                  "Minha",
-                                  style: const TextStyle(
-                                      color: const Color(0xff3b4d57),
-                                      fontWeight: FontWeight.w700,
-                                      fontFamily: "Roboto",
-                                      fontStyle: FontStyle.normal,
-                                      fontSize: 14.0),
+                              Padding(
+                                padding: const EdgeInsets.only(top:16.0),
+                                child: Center(
+                                  child: Text(
+                                    "Minha",
+                                    style: const TextStyle(
+                                        color: const Color(0xff3b4d57),
+                                        fontWeight: FontWeight.w700,
+                                        fontFamily: "Roboto",
+                                        fontStyle: FontStyle.normal,
+                                        fontSize: 14.0),
+                                  ),
                                 ),
                               ),
                               Center(
@@ -187,10 +205,13 @@ class _HomeViewState extends State<HomeView> {
                       ),
                     ),
                     Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
                       child: Center(
                         child: Container(
-                          height: 150,
-                          width: 110,
+                          height: height / 3.5,
+                          width: width / 2.6,
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
@@ -199,15 +220,18 @@ class _HomeViewState extends State<HomeView> {
                                 child: Image.asset(
                                     'assets/drawable-xhdpi/009-map-1.png'),
                               ),
-                              Center(
-                                child: Text(
-                                  "Pesquisar",
-                                  style: const TextStyle(
-                                      color: const Color(0xff3b4d57),
-                                      fontWeight: FontWeight.w700,
-                                      fontFamily: "Roboto",
-                                      fontStyle: FontStyle.normal,
-                                      fontSize: 14.0),
+                              Padding(
+                                padding: const EdgeInsets.only(top:16.0),
+                                child: Center(
+                                  child: Text(
+                                    "Pesquisar",
+                                    style: const TextStyle(
+                                        color: const Color(0xff3b4d57),
+                                        fontWeight: FontWeight.w700,
+                                        fontFamily: "Roboto",
+                                        fontStyle: FontStyle.normal,
+                                        fontSize: 14.0),
+                                  ),
                                 ),
                               ),
                               Center(
