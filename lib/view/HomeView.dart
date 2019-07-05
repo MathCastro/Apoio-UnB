@@ -274,12 +274,12 @@ class _HomeViewState extends State<HomeView> {
                                 borderRadius: BorderRadius.circular(10),
                               ),
                               child: Container(
-                                width: 230,
-                                height: 50,
+                                width: width*0.8,
+                                height: height/9,
                                 child: Row(
                                   children: <Widget>[
                                     Container(
-                                      height: 50,
+                                      height: height/9,
                                       width: 8,
                                       decoration: BoxDecoration(
                                         color: colorAquamarine,
