@@ -131,6 +131,9 @@ class _PesquisaUnidadeState extends State<PesquisaUnidadeView> {
                                 padding: const EdgeInsets.only(
                                     top: 20.0, left: 40.0, bottom: 30.0)),
                             Card(
+                              shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
                               child: InkWell(
                                 splashColor: Colors.blue.withAlpha(30),
                                 onTap: () {},
@@ -138,6 +141,7 @@ class _PesquisaUnidadeState extends State<PesquisaUnidadeView> {
                                     width: width * 0.8,
                                     height: height * 0.1,
                                     decoration: const BoxDecoration(
+                                      
                                     border: Border(
                                       left: BorderSide(width: 8.0, color: Color(0xff03dac6)),
                                     ),
@@ -239,6 +243,9 @@ class _PesquisaUnidadeState extends State<PesquisaUnidadeView> {
                                 padding: const EdgeInsets.only(
                                     top: 20.0, left: 40.0, bottom: 30.0)),
                             Card(
+                              shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
                               child: InkWell(
                                 splashColor: Colors.blue.withAlpha(30),
                                 onTap: () {},
