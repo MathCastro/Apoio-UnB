@@ -307,7 +307,9 @@ class _HomeViewState extends State<HomeView> {
                                         Padding(
                                           padding: const EdgeInsets.only(left: 8),
                                           child: Text(
-                                            DateTime.parse(snapshot.data[index].data).toString(),
+                                            DateTime.parse(snapshot.data[index].data).toString().substring(8,10)+'/'+
+                                            DateTime.parse(snapshot.data[index].data).toString().substring(5,7)+'/'+
+                                            DateTime.parse(snapshot.data[index].data).toString().substring(0,4),
                                             style: TextStyle(
                                                 color: colorMutedBlue,
                                                 fontWeight: FontWeight.w700,
