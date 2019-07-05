@@ -123,26 +123,73 @@ class SliderFormState extends State<SliderForm> {
                     child: Column(
                       children: <Widget>[
                         Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 15.0),
+                          padding: const EdgeInsets.symmetric(horizontal: 12.0),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: List.generate(
-                                6,
-                                (index) => Text(
-                                      "$index",
+                              
+                              children: <Widget>[
+                              Text(
+                                      "0",
                                       style: const TextStyle(
                                           color: const Color(0xffced4d9),
                                           fontWeight: FontWeight.w700,
                                           fontFamily: "Roboto",
                                           fontStyle: FontStyle.normal,
                                           fontSize: 12.0),
-                                    )),
+                                    ),
+                                    Text(
+                                      "1",
+                                      style: const TextStyle(
+                                          color: const Color(0xffced4d9),
+                                          fontWeight: FontWeight.w700,
+                                          fontFamily: "Roboto",
+                                          fontStyle: FontStyle.normal,
+                                          fontSize: 12.0),
+                                    ),
+                                    Text(
+                                      "2",
+                                      style: const TextStyle(
+                                          color: const Color(0xffced4d9),
+                                          fontWeight: FontWeight.w700,
+                                          fontFamily: "Roboto",
+                                          fontStyle: FontStyle.normal,
+                                          fontSize: 12.0),
+                                    ),
+                                    Text(
+                                      "3",
+                                      style: const TextStyle(
+                                          color: const Color(0xffced4d9),
+                                          fontWeight: FontWeight.w700,
+                                          fontFamily: "Roboto",
+                                          fontStyle: FontStyle.normal,
+                                          fontSize: 12.0),
+                                    ),
+                                    Text(
+                                      "4",
+                                      style: const TextStyle(
+                                          color: const Color(0xffced4d9),
+                                          fontWeight: FontWeight.w700,
+                                          fontFamily: "Roboto",
+                                          fontStyle: FontStyle.normal,
+                                          fontSize: 12.0),
+                                    ),
+                              Text(
+                                      "Todos os dias",
+                                      style: const TextStyle(
+                                          color: const Color(0xffced4d9),
+                                          fontWeight: FontWeight.w700,
+                                          fontFamily: "Roboto",
+                                          fontStyle: FontStyle.normal,
+                                          fontSize: 12.0),
+                                    )
+                                  
+                              ]),
                           ),
-                        ),
                         Slider(
                           min: 0,
-                          max: 5,
-                          divisions: 6,
+                          max: 7,
+                          divisions: 7,
+                          label: _value1.toString(),
                           value: _value1,
                           onChanged: _setvalue1,
                           activeColor: colorAquamarine,
@@ -196,26 +243,73 @@ class SliderFormState extends State<SliderForm> {
                     child: Column(
                       children: <Widget>[
                         Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 15.0),
+                          padding: const EdgeInsets.symmetric(horizontal: 12.0),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: List.generate(
-                                6,
-                                (index) => Text(
-                                      "$index",
+                              
+                              children: <Widget>[
+                              Text(
+                                      "0",
                                       style: const TextStyle(
                                           color: const Color(0xffced4d9),
                                           fontWeight: FontWeight.w700,
                                           fontFamily: "Roboto",
                                           fontStyle: FontStyle.normal,
                                           fontSize: 12.0),
-                                    )),
+                                    ),
+                                    Text(
+                                      "1",
+                                      style: const TextStyle(
+                                          color: const Color(0xffced4d9),
+                                          fontWeight: FontWeight.w700,
+                                          fontFamily: "Roboto",
+                                          fontStyle: FontStyle.normal,
+                                          fontSize: 12.0),
+                                    ),
+                                    Text(
+                                      "2",
+                                      style: const TextStyle(
+                                          color: const Color(0xffced4d9),
+                                          fontWeight: FontWeight.w700,
+                                          fontFamily: "Roboto",
+                                          fontStyle: FontStyle.normal,
+                                          fontSize: 12.0),
+                                    ),
+                                    Text(
+                                      "3",
+                                      style: const TextStyle(
+                                          color: const Color(0xffced4d9),
+                                          fontWeight: FontWeight.w700,
+                                          fontFamily: "Roboto",
+                                          fontStyle: FontStyle.normal,
+                                          fontSize: 12.0),
+                                    ),
+                                    Text(
+                                      "4",
+                                      style: const TextStyle(
+                                          color: const Color(0xffced4d9),
+                                          fontWeight: FontWeight.w700,
+                                          fontFamily: "Roboto",
+                                          fontStyle: FontStyle.normal,
+                                          fontSize: 12.0),
+                                    ),
+                              Text(
+                                      "Todos os dias",
+                                      style: const TextStyle(
+                                          color: const Color(0xffced4d9),
+                                          fontWeight: FontWeight.w700,
+                                          fontFamily: "Roboto",
+                                          fontStyle: FontStyle.normal,
+                                          fontSize: 12.0),
+                                    )
+                                  
+                              ]),
                           ),
-                        ),
                         Slider(
                           min: 0,
-                          max: 5,
-                          divisions: 6,
+                          max: 7,
+                          divisions: 7,
+                          label: _value2.toString(),
                           value: _value2,
                           onChanged: _setvalue2,
                           activeColor: colorAquamarine,
@@ -269,26 +363,73 @@ class SliderFormState extends State<SliderForm> {
                     child: Column(
                       children: <Widget>[
                         Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 15.0),
+                          padding: const EdgeInsets.symmetric(horizontal: 12.0),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: List.generate(
-                                6,
-                                (index) => Text(
-                                      "$index",
+                              
+                              children: <Widget>[
+                              Text(
+                                      "0",
                                       style: const TextStyle(
                                           color: const Color(0xffced4d9),
                                           fontWeight: FontWeight.w700,
                                           fontFamily: "Roboto",
                                           fontStyle: FontStyle.normal,
                                           fontSize: 12.0),
-                                    )),
+                                    ),
+                                    Text(
+                                      "1",
+                                      style: const TextStyle(
+                                          color: const Color(0xffced4d9),
+                                          fontWeight: FontWeight.w700,
+                                          fontFamily: "Roboto",
+                                          fontStyle: FontStyle.normal,
+                                          fontSize: 12.0),
+                                    ),
+                                    Text(
+                                      "2",
+                                      style: const TextStyle(
+                                          color: const Color(0xffced4d9),
+                                          fontWeight: FontWeight.w700,
+                                          fontFamily: "Roboto",
+                                          fontStyle: FontStyle.normal,
+                                          fontSize: 12.0),
+                                    ),
+                                    Text(
+                                      "3",
+                                      style: const TextStyle(
+                                          color: const Color(0xffced4d9),
+                                          fontWeight: FontWeight.w700,
+                                          fontFamily: "Roboto",
+                                          fontStyle: FontStyle.normal,
+                                          fontSize: 12.0),
+                                    ),
+                                    Text(
+                                      "4",
+                                      style: const TextStyle(
+                                          color: const Color(0xffced4d9),
+                                          fontWeight: FontWeight.w700,
+                                          fontFamily: "Roboto",
+                                          fontStyle: FontStyle.normal,
+                                          fontSize: 12.0),
+                                    ),
+                              Text(
+                                      "Todos os dias",
+                                      style: const TextStyle(
+                                          color: const Color(0xffced4d9),
+                                          fontWeight: FontWeight.w700,
+                                          fontFamily: "Roboto",
+                                          fontStyle: FontStyle.normal,
+                                          fontSize: 12.0),
+                                    )
+                                  
+                              ]),
                           ),
-                        ),
                         Slider(
                           min: 0,
-                          max: 5,
-                          divisions: 6,
+                          max: 7,
+                          divisions: 7,
+                          label: _value3.toString(),
                           value: _value3,
                           onChanged: _setvalue3,
                           activeColor: colorAquamarine,
@@ -342,26 +483,73 @@ class SliderFormState extends State<SliderForm> {
                     child: Column(
                       children: <Widget>[
                         Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 15.0),
+                          padding: const EdgeInsets.symmetric(horizontal: 12.0),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: List.generate(
-                                6,
-                                (index) => Text(
-                                      "$index",
+                              
+                              children: <Widget>[
+                              Text(
+                                      "0",
                                       style: const TextStyle(
                                           color: const Color(0xffced4d9),
                                           fontWeight: FontWeight.w700,
                                           fontFamily: "Roboto",
                                           fontStyle: FontStyle.normal,
                                           fontSize: 12.0),
-                                    )),
+                                    ),
+                                    Text(
+                                      "1",
+                                      style: const TextStyle(
+                                          color: const Color(0xffced4d9),
+                                          fontWeight: FontWeight.w700,
+                                          fontFamily: "Roboto",
+                                          fontStyle: FontStyle.normal,
+                                          fontSize: 12.0),
+                                    ),
+                                    Text(
+                                      "2",
+                                      style: const TextStyle(
+                                          color: const Color(0xffced4d9),
+                                          fontWeight: FontWeight.w700,
+                                          fontFamily: "Roboto",
+                                          fontStyle: FontStyle.normal,
+                                          fontSize: 12.0),
+                                    ),
+                                    Text(
+                                      "3",
+                                      style: const TextStyle(
+                                          color: const Color(0xffced4d9),
+                                          fontWeight: FontWeight.w700,
+                                          fontFamily: "Roboto",
+                                          fontStyle: FontStyle.normal,
+                                          fontSize: 12.0),
+                                    ),
+                                    Text(
+                                      "4",
+                                      style: const TextStyle(
+                                          color: const Color(0xffced4d9),
+                                          fontWeight: FontWeight.w700,
+                                          fontFamily: "Roboto",
+                                          fontStyle: FontStyle.normal,
+                                          fontSize: 12.0),
+                                    ),
+                              Text(
+                                      "Todos os dias",
+                                      style: const TextStyle(
+                                          color: const Color(0xffced4d9),
+                                          fontWeight: FontWeight.w700,
+                                          fontFamily: "Roboto",
+                                          fontStyle: FontStyle.normal,
+                                          fontSize: 12.0),
+                                    )
+                                  
+                              ]),
                           ),
-                        ),
                         Slider(
                           min: 0,
-                          max: 5,
-                          divisions: 6,
+                          max: 7,
+                          divisions: 7,
+                          label: _value4.toString(),
                           value: _value4,
                           onChanged: _setvalue4,
                           activeColor: colorAquamarine,
@@ -415,26 +603,73 @@ class SliderFormState extends State<SliderForm> {
                     child: Column(
                       children: <Widget>[
                         Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 15.0),
+                          padding: const EdgeInsets.symmetric(horizontal: 12.0),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: List.generate(
-                                6,
-                                (index) => Text(
-                                      "$index",
+                              
+                              children: <Widget>[
+                              Text(
+                                      "0",
                                       style: const TextStyle(
                                           color: const Color(0xffced4d9),
                                           fontWeight: FontWeight.w700,
                                           fontFamily: "Roboto",
                                           fontStyle: FontStyle.normal,
                                           fontSize: 12.0),
-                                    )),
+                                    ),
+                                    Text(
+                                      "1",
+                                      style: const TextStyle(
+                                          color: const Color(0xffced4d9),
+                                          fontWeight: FontWeight.w700,
+                                          fontFamily: "Roboto",
+                                          fontStyle: FontStyle.normal,
+                                          fontSize: 12.0),
+                                    ),
+                                    Text(
+                                      "2",
+                                      style: const TextStyle(
+                                          color: const Color(0xffced4d9),
+                                          fontWeight: FontWeight.w700,
+                                          fontFamily: "Roboto",
+                                          fontStyle: FontStyle.normal,
+                                          fontSize: 12.0),
+                                    ),
+                                    Text(
+                                      "3",
+                                      style: const TextStyle(
+                                          color: const Color(0xffced4d9),
+                                          fontWeight: FontWeight.w700,
+                                          fontFamily: "Roboto",
+                                          fontStyle: FontStyle.normal,
+                                          fontSize: 12.0),
+                                    ),
+                                    Text(
+                                      "4",
+                                      style: const TextStyle(
+                                          color: const Color(0xffced4d9),
+                                          fontWeight: FontWeight.w700,
+                                          fontFamily: "Roboto",
+                                          fontStyle: FontStyle.normal,
+                                          fontSize: 12.0),
+                                    ),
+                              Text(
+                                      "Todos os dias",
+                                      style: const TextStyle(
+                                          color: const Color(0xffced4d9),
+                                          fontWeight: FontWeight.w700,
+                                          fontFamily: "Roboto",
+                                          fontStyle: FontStyle.normal,
+                                          fontSize: 12.0),
+                                    )
+                                  
+                              ]),
                           ),
-                        ),
                         Slider(
                           min: 0,
-                          max: 5,
-                          divisions: 6,
+                          max: 7,
+                          divisions: 7,
+                          label: _value5.toString(),
                           value: _value5,
                           onChanged: _setvalue5,
                           activeColor: colorAquamarine,
