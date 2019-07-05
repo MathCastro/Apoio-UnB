@@ -264,7 +264,6 @@ class _HomeViewState extends State<HomeView> {
                       return Center(child: CircularProgressIndicator());
                     return Center(
                       child: ListView.builder(
-                        // scrollDirection: Axis.vertical,
                         shrinkWrap: true,
                         physics: NeverScrollableScrollPhysics(),
                         itemCount: snapshot.data.length,
@@ -290,17 +289,21 @@ class _HomeViewState extends State<HomeView> {
                                         )
                                       ),
                                     ),
-                                    Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: Text(
-                                        snapshot.data[index].unidade,
-                                        style: TextStyle(
-                                            color: colorMutedBlue,
-                                            fontWeight: FontWeight.w700,
-                                            fontFamily: "Roboto",
-                                            fontStyle: FontStyle.normal,
-                                            fontSize: 14.0),
-                                      ),
+                                    Column(
+                                      children: <Widget>[
+                                        Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Text(
+                                            snapshot.data[index].unidade,
+                                            style: TextStyle(
+                                                color: colorMutedBlue,
+                                                fontWeight: FontWeight.w700,
+                                                fontFamily: "Roboto",
+                                                fontStyle: FontStyle.normal,
+                                                fontSize: 14.0),
+                                          ),
+                                        ),
+                                      ],
                                     ),
                                   ],
                                 ),
