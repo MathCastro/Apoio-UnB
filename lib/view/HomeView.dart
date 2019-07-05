@@ -55,6 +55,7 @@ class _HomeViewState extends State<HomeView> {
                         Navigator.pushNamed(context, '/pesquisa1');
                       },
                       child: Card(
+                        elevation: 8,
                         child: Center(
                           child: Container(
                             height: 150,
@@ -101,6 +102,7 @@ class _HomeViewState extends State<HomeView> {
                             context, '/nova_consulta_unid_atend');
                       },
                       child: Card(
+                        elevation: 8,
                         child: Center(
                           child: Container(
                             height: 150,
@@ -147,6 +149,7 @@ class _HomeViewState extends State<HomeView> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Card(
+                      elevation: 8,
                       child: Center(
                         child: Container(
                           height: 150,
@@ -187,6 +190,7 @@ class _HomeViewState extends State<HomeView> {
                       ),
                     ),
                     Card(
+                      elevation: 8,
                       child: Center(
                         child: Container(
                           height: 150,
