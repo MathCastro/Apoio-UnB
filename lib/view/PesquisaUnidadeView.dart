@@ -61,26 +61,29 @@ class PesquisaUnidadeView extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
                           RaisedButton(
-                                color: Colors.white,
-                                onPressed: () {},
-                                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
-                                child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: <Widget>[
-                                  Icon(Icons.search),
-                                  Padding(padding: const EdgeInsets.only(right: 10.0)),
-                                  Text(
-                                    "Pesquisar unidades de atendimento",
-                                    style: const TextStyle(
-                                    color: Color(0x99000000),
-                                    fontWeight: FontWeight.w400,
-                                    fontFamily: "Roboto",
-                                    fontStyle:  FontStyle.normal,
-                                    fontSize: 14.0
-                                  )),
-                                ]
+                            color: Colors.white,
+                            onPressed: () {},
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(30.0)),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: <Widget>[
+                                Icon(Icons.search),
+                                Padding(
+                                    padding:
+                                        const EdgeInsets.only(right: 10.0)),
+                                Text(
+                                  "Pesquisar unidades de atendimento",
+                                  style: const TextStyle(
+                                      color: Color(0x99000000),
+                                      fontWeight: FontWeight.w400,
+                                      fontFamily: "Roboto",
+                                      fontStyle: FontStyle.normal,
+                                      fontSize: 14.0),
                                 ),
-                              ),
+                              ],
+                            ),
+                          ),
                         ],
                       ),
                     ),
@@ -88,97 +91,115 @@ class PesquisaUnidadeView extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: <Widget>[
                         Padding(
-                          padding: const EdgeInsets.only(top:20.0, left: 40.0, bottom:30.0)),
+                            padding: const EdgeInsets.only(
+                                top: 20.0, left: 40.0, bottom: 30.0)),
                         Text(
                           "Unidade de atendimento",
                           style: const TextStyle(
-                          color:  const Color(0xff3b4d57),
-                          fontWeight: FontWeight.w500,
-                          fontFamily: "Roboto",
-                          fontStyle:  FontStyle.normal,
-                          fontSize: 20.0
-                        )),
+                              color: const Color(0xff3b4d57),
+                              fontWeight: FontWeight.w500,
+                              fontFamily: "Roboto",
+                              fontStyle: FontStyle.normal,
+                              fontSize: 20.0),
+                        ),
                       ],
                     ),
-                    
                     Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: <Widget>[
-                        Padding(
-                          padding: const EdgeInsets.only(bottom:0.0)),
+                        Padding(padding: const EdgeInsets.only(bottom: 0.0)),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: <Widget>[
-                            Padding(padding: const EdgeInsets.only(top:20.0, left: 40.0, bottom:30.0)),
+                            Padding(
+                                padding: const EdgeInsets.only(
+                                    top: 20.0, left: 40.0, bottom: 30.0)),
                             Card(
-                            child: InkWell(
-                              splashColor: Colors.blue.withAlpha(30),
-                              onTap: () {},
-                              child: Container(
-                                width: width*0.8,
-                                height: height*0.1,
-                                child: 
-                                  Row(
-                                    children: <Widget>[
-                                      /////////////////////////// FIX-ME /////////////////
-                                      Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        children: <Widget>[
-                                          Container(
-                                            margin: EdgeInsets.all(8.0),
-                                            decoration: BoxDecoration (color: Colors.black,)
-                                          ),
-                                      ]),
-                                      /////////////////////////// FIX-ME /////////////////
-                                      Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        children: <Widget>[
-                                          Row(
-                                            mainAxisAlignment: MainAxisAlignment.start,
+                              child: InkWell(
+                                splashColor: Colors.blue.withAlpha(30),
+                                onTap: () {},
+                                child: Container(
+                                    width: width * 0.8,
+                                    height: height * 0.1,
+                                    child: Row(
+                                      children: <Widget>[
+                                        /////////////////////////// FIX-ME /////////////////
+                                        Column(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            Container(
+                                              margin: EdgeInsets.all(8.0),
+                                              decoration: BoxDecoration(
+                                                color: Colors.black,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                        /////////////////////////// FIX-ME /////////////////
+                                        Column(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
                                             children: <Widget>[
-                                              Text(
-                                                "Nepasd\n",
-                                                style: const TextStyle(
-                                                color:  Color(0xff33849b),
-                                                fontWeight: FontWeight.w700,
-                                                fontFamily: "Roboto",
-                                                fontStyle:  FontStyle.normal,
-                                                fontSize: 12.0
-                                              )),
-                                            ]
-                                          ),
-                                          Row(
-                                            mainAxisAlignment: MainAxisAlignment.start,
+                                              Row(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.start,
+                                                children: <Widget>[
+                                                  Text(
+                                                    "Nepasd\n",
+                                                    style: const TextStyle(
+                                                        color:
+                                                            Color(0xff33849b),
+                                                        fontWeight:
+                                                            FontWeight.w700,
+                                                        fontFamily: "Roboto",
+                                                        fontStyle:
+                                                            FontStyle.normal,
+                                                        fontSize: 12.0),
+                                                  ),
+                                                ],
+                                              ),
+                                              Row(
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment.start,
+                                                  children: <Widget>[
+                                                    Text(
+                                                        "Lorem ipsum dolor sit amet, consectetur\nadipiscing elit.",
+                                                        style: const TextStyle(
+                                                            color: Color(
+                                                                0xff33849b),
+                                                            fontWeight:
+                                                                FontWeight.w400,
+                                                            fontFamily:
+                                                                "Roboto",
+                                                            fontStyle: FontStyle
+                                                                .normal,
+                                                            fontSize: 12.0)),
+                                                  ]),
+                                            ]),
+                                        Column(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.center,
                                             children: <Widget>[
-                                              Text(
-                                                "Lorem ipsum dolor sit amet, consectetur\nadipiscing elit.",
-                                                style: const TextStyle(
-                                                color:  Color(0xff33849b),
-                                                fontWeight: FontWeight.w400,
-                                                fontFamily: "Roboto",
-                                                fontStyle:  FontStyle.normal,
-                                                fontSize: 12.0
-                                              )),
-                                            ]
-                                          ),
-                                        ]
-                                      ),
-                                      Column(
-                                        crossAxisAlignment: CrossAxisAlignment.center,
-                                        children: <Widget>[
-                                          Padding(padding: const EdgeInsets.only(top: 20.0)),
-                                          Row(
-                                            mainAxisAlignment: MainAxisAlignment.center,
-                                            children: <Widget>[
-                                              Padding(padding: const EdgeInsets.only(left: 15.0)),
-                                              Icon(Icons.add_circle_outline),
-                                            ],
-                                          )
-                                        ]
-                                      ),
-                                    ],
-                                  )
-                                ),
+                                              Padding(
+                                                  padding:
+                                                      const EdgeInsets.only(
+                                                          top: 20.0)),
+                                              Row(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
+                                                children: <Widget>[
+                                                  Padding(
+                                                      padding:
+                                                          const EdgeInsets.only(
+                                                              left: 15.0)),
+                                                  Icon(
+                                                      Icons.add_circle_outline),
+                                                ],
+                                              )
+                                            ]),
+                                      ],
+                                    )),
                               ),
                             ),
                           ],

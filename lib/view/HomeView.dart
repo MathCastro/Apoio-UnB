@@ -52,7 +52,7 @@ class _HomeViewState extends State<HomeView> {
                   children: <Widget>[
                     InkWell(
                       onTap: () {
-                        Navigator.pushNamed(context, '/pesquisa1');
+                        print("tapped");
                       },
                       child: Card(
                         child: Center(
@@ -238,6 +238,7 @@ class _HomeViewState extends State<HomeView> {
                       child: ListView.builder(
                         // scrollDirection: Axis.vertical,
                         shrinkWrap: true,
+                        physics: NeverScrollableScrollPhysics(),
                         itemCount: snapshot.data.length,
                         itemBuilder: (BuildContext ctxt, int index) {
                           return Center(
