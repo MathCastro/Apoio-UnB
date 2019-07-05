@@ -52,7 +52,7 @@ class _HomeViewState extends State<HomeView> {
                   children: <Widget>[
                     InkWell(
                       onTap: () {
-                        print("tapped");
+                        Navigator.pushNamed(context, '/pesquisa1');
                       },
                       child: Card(
                         child: Center(
