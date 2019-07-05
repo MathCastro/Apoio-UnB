@@ -253,17 +253,32 @@ class _HomeViewState extends State<HomeView> {
                               child: Container(
                                 width: 230,
                                 height: 50,
-                                child: Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Text(
-                                    snapshot.data[index].unidade,
-                                    style: TextStyle(
-                                        color: colorMutedBlue,
-                                        fontWeight: FontWeight.w700,
-                                        fontFamily: "Roboto",
-                                        fontStyle: FontStyle.normal,
-                                        fontSize: 14.0),
-                                  ),
+                                child: Row(
+                                  children: <Widget>[
+                                    Container(
+                                      height: 50,
+                                      width: 8,
+                                      decoration: BoxDecoration(
+                                        color: colorAquamarine,
+                                        borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(8.0),
+                                          bottomLeft: Radius.circular(8.0),
+                                        )
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Text(
+                                        snapshot.data[index].unidade,
+                                        style: TextStyle(
+                                            color: colorMutedBlue,
+                                            fontWeight: FontWeight.w700,
+                                            fontFamily: "Roboto",
+                                            fontStyle: FontStyle.normal,
+                                            fontSize: 14.0),
+                                      ),
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),
