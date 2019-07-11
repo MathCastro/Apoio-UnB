@@ -18,6 +18,7 @@ import 'view/ProfileView.dart';
 import 'view/AtendimentoInicialView.dart';
 import 'view/InfoUnidadeView.dart';
 import 'view/PesquisaUnidadeView.dart';
+import 'view/InfoPesquisaView.dart';
 
 void main() => runApp(MyApp());
 
@@ -63,7 +64,7 @@ class MyApp extends StatelessWidget {
         '/pesquisa3': (context) => Pesquisa3View(),
         '/pesquisa4': (context) => Pesquisa4View(),
         '/resp_questionario': (context) => RespondeuQuestionarioView(),
-
+        '/info_pesquisa': (context) => InfoPesquisaView(),
       }
     );
   }

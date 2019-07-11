@@ -136,7 +136,7 @@ class _PesquisaUnidadeState extends State<PesquisaUnidadeView> {
                         ),
                               child: InkWell(
                                 splashColor: Colors.blue.withAlpha(30),
-                                onTap: () {},
+                                onTap: () {Navigator.pushNamed(context, '/info_unidade');},
                                 child: Container(
                                     width: width * 0.8,
                                     height: height * 0.1,

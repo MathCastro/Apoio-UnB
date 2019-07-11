@@ -416,7 +416,10 @@ class _HomeViewState extends State<HomeView> {
         ],
         onTap: (index) {
           _incrementTab(index);
-          if(index == 2){
+          if(index == 1){
+            //Navigator.pushNamed(context, '/minhas_consultas');
+          }
+          else if(index == 2){
             Navigator.pushNamed(context, '/perfil');
           }
           else if(index == 3){
