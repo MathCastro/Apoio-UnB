@@ -20,6 +20,7 @@ import 'view/InfoUnidadeView.dart';
 import 'view/PesquisaUnidadeView.dart';
 import 'view/InfoPesquisaView.dart';
 import 'view/HorariosAtendimentoView.dart';
+import 'view/HistoricoAtendimentoView.dart';
 
 void main() => runApp(MyApp());
 
@@ -67,6 +68,7 @@ class MyApp extends StatelessWidget {
         '/resp_questionario': (context) => RespondeuQuestionarioView(),
         '/info_pesquisa': (context) => InfoPesquisaView(),
         '/horarios_atendimento': (context) => HorariosAtendimentoView(),
+        '/historico_atendimento': (context) => HistoricoAtendimentoView(),
       }
     );
   }

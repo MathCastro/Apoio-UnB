@@ -95,7 +95,7 @@ class ProfileView extends StatelessWidget {
                         children: <Widget>[
                         FlatButton(
                           materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                          onPressed: () {},
+                          onPressed: () {Navigator.pushNamed(context, '/historico_atendimento');},
                           child: Text(
                             "Histórico de atendimento",
                             style: const TextStyle(
