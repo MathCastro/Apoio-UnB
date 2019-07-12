@@ -117,7 +117,7 @@ class ProfileView extends StatelessWidget {
                         children: <Widget>[
                         FlatButton(
                           materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                          onPressed: () {},
+                          onPressed: () {Navigator.pushNamed(context, '/');},
                           child: Text(
                             "Sair",
                             style: const TextStyle(
