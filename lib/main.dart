@@ -1,6 +1,7 @@
 import 'package:apoio_unb/res/Colors.dart';
 import 'package:apoio_unb/view/AgendarConsultaView.dart';
 import 'package:apoio_unb/view/ConsultaAgendadaComSucessoView.dart';
+import 'package:apoio_unb/view/GoogleMapView.dart';
 import 'package:apoio_unb/view/NovaConsultaAreaAtuacaoView.dart';
 import 'package:apoio_unb/view/NovaConsultaProfDispView.dart';
 import 'package:apoio_unb/view/NovaConsultaUnidAtendView.dart';
@@ -69,6 +70,7 @@ class MyApp extends StatelessWidget {
         '/info_pesquisa': (context) => InfoPesquisaView(),
         '/horarios_atendimento': (context) => HorariosAtendimentoView(),
         '/historico_atendimento': (context) => HistoricoAtendimentoView(),
+        '/google_maps': (context) => GoogleMapView(),
       }
     );
   }

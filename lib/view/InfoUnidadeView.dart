@@ -154,7 +154,7 @@ class InfoUnidadeView extends StatelessWidget {
                                 ),
                                 color: Colors.white,
                                 onPressed: () {
-                                  // Navigator.pushNamed(context, '/registrar');
+                                  Navigator.pushNamed(context, '/google_maps');
                                 },
                                 child: Center(
                                   child: Text(
