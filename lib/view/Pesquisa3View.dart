@@ -688,18 +688,7 @@ class SliderFormState extends State<SliderForm> {
                   ),
                   color: Colors.white,
                   onPressed: () {
-                    if (_formKey.currentState.validate()) {
-                      _formKey.currentState.save();
-                      // If the form is valid, we want to show a Snackbar
-                      Scaffold.of(context).showSnackBar(
-                          SnackBar(content: Text('Processing Data')));
-
-                      AuthController().registerUser(_user);
                       Navigator.pushNamed(context, '/pesquisa4');
-
-                      print('Printing the login data.');
-                      print('User: ${_user.toString()}');
-                    }
                   },
                   child: Center(
                     child: Text(
