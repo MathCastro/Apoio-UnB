@@ -180,7 +180,7 @@ class InfoUnidadeView extends StatelessWidget {
                               child: RaisedButton(
                                 color: colorMutedBlue,
                                 onPressed: () {
-                                  // Navigator.pushNamed(context, '/login');
+                                  Navigator.pushNamed(context, '/horarios_atendimento');
                                 },
                                 child: Center(
                                   child: Text(
